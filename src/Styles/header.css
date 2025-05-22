@@ -1,0 +1,59 @@
+.language li {
+    list-style: none;
+}
+
+.language .down {
+    display: none;
+    top: 23px;
+    left: 0px;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1;
+    box-shadow: 0px 0px 2px rgb(85, 85, 85);
+}
+
+.language a {
+    font-size: .8rem;
+    font-family: "Poppins";
+    color: black;
+    transition: all ease-in-out .4s;
+}
+
+.language a:hover {
+    color: #A3381C;
+}
+
+.language li:hover .down {
+    display: block;
+}
+
+.top_left a {
+    font-size: .8rem;
+    font-family: "Poppins";
+    color: black;
+    transition: all ease-in-out .4s;
+}
+
+.top_left a:hover {
+    color: #A3381C;
+}
+
+.top_icons i {
+    color: black;
+    transition: all ease-in-out .4s;
+}
+
+.top_icons i:hover {
+    color: #A3381C;
+}
+
+.contact a {
+    color: black;
+    font-family: "Poppins";
+    font-size: .8rem;
+    transition: all ease-in-out .4s;
+}
+
+.contact a:hover {
+    color: #A3381C;
+}
