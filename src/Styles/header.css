@@ -56,3 +56,41 @@
 .contact a:hover {
     color: #A3381C;
 }
+
+
+
+
+/* Navbar start  */
+
+.category_search {
+    background-color: #F7F7F7;
+    font-family: "Poppins";
+    font-size: .9rem;
+}
+
+.search input {
+    border: none;
+    font-family: "Poppins";
+}
+
+.search input:focus {
+    box-shadow: none;
+}
+
+.search input::placeholder {
+    font-size: .8rem;
+}
+
+.search button {
+    color: white !important;
+    background-color: #A3381C !important;
+}
+
+.account {
+    color: black;
+    transition: all ease-in-out .4s;
+}
+
+.account:hover {
+    color: #A3381C;
+}

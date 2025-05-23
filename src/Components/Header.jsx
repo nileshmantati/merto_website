@@ -7,6 +7,9 @@ import { Link } from 'react-router-dom';
 import '../Styles/header.css';
 import '../Styles/all.min.css';
 
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+
 function Header() {
     return (
         <div className='container-fluid px-5'>
@@ -31,7 +34,7 @@ function Header() {
                             </li>
                         </ul>
                     </div>
-                    <div className="d-flex column-gap-3">
+                    <div className="d-none d-lg-flex column-gap-3">
                         <Link className='text-capitalize text-decoration-none'>track order</Link>
                         <Link className='text-capitalize text-decoration-none'>contact</Link>
                         <Link className='text-capitalize text-decoration-none'>FAQs</Link>
@@ -50,29 +53,39 @@ function Header() {
                     </div>
                 </div>
             </div>
-            <Navbar expand="lg" className="bg-body-tertiary">
-                <Navbar.Brand href="#home"><img src={require('../img/logo-furniture.png')} alt="Not Found Logo" width={100} height={40} /></Navbar.Brand>
+            <Navbar expand="lg" className="py-4 d-flex">
+                <Navbar.Brand href="#home"><img src={require('../img/logo-furniture.png')} alt="Not Found Logo" width={130} height={40} /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
-                        <Nav.Link><Link to="/" className='home'>Home</Link></Nav.Link>
-                        <Nav.Link><Link to="">Link</Link></Nav.Link>
-                        <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.2">
-                                Another action
-                            </NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                            <NavDropdown.Divider />
-                            <NavDropdown.Item href="#action/3.4">
-                                Separated link
-                            </NavDropdown.Item>
-                        </NavDropdown>
+                <Navbar.Collapse id="basic-navbar-nav" className='d-flex justify-content-end'>
+                    <Nav className="col-12 d-flex justify-content-end">
+                        <div className="category_search d-flex p-2 rounded-3 align-items-center">
+                            <NavDropdown title="All Categories" id="basic-nav-dropdown">
+                                <NavDropdown.Item>Autopart</NavDropdown.Item>
+                                <NavDropdown.Item className='ps-4'>Accessories</NavDropdown.Item>
+                                <NavDropdown.Item className='ps-4'>Car Care</NavDropdown.Item>
+                                <NavDropdown.Item className='ps-4'>Car Electronics</NavDropdown.Item>
+                                <NavDropdown.Item className='ps-4'>Equipment</NavDropdown.Item>
+                            </NavDropdown>
+                            <Form className="search d-flex ms-2">
+                                <Form.Control
+                                    type="search"
+                                    placeholder="Search for products"
+                                    className="me-2 bg-transparent border-start border-1 rounded-0"
+                                    aria-label="Search"
+                                />
+                                <Button variant=""><i className="fa-solid fa-magnifying-glass"></i></Button>
+                            </Form>
+                        </div>
+                        <div className="d-flex column-gap-3">
+                            <Link to="" className='account text-decoration-none d-flex align-items-center'><i className="fa-solid fa-user fa-lg me-3"></i>Account</Link>
+                            <Link to="" className='account text-decoration-none d-flex align-items-center'><i className="fa-regular fa-heart fa-lg"></i></Link>
+                            <Link to="" className='account text-decoration-none d-flex align-items-center'><i className="fa-solid fa-cart-shopping fa-lg"></i></Link>
+                        </div>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>
         </div>
-    )
+    );
 }
 
 export default Header
