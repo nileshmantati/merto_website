@@ -56,9 +56,9 @@ function Header() {
             <Navbar expand="lg" className="py-4 d-flex">
                 <Navbar.Brand href="#home"><img src={require('../img/logo-furniture.png')} alt="Not Found Logo" width={130} height={40} /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav" className='d-flex justify-content-end'>
-                    <Nav className="col-12 d-flex justify-content-end">
-                        <div className="category_search d-flex p-2 rounded-3 align-items-center">
+                <Navbar.Collapse id="basic-navbar-nav" className='justify-content-end'>
+                    <Nav className="col-10 justify-content-between">
+                        <div className="category_search col-7 d-flex p-2 rounded-3 align-items-center justify-content-between">
                             <NavDropdown title="All Categories" id="basic-nav-dropdown">
                                 <NavDropdown.Item>Autopart</NavDropdown.Item>
                                 <NavDropdown.Item className='ps-4'>Accessories</NavDropdown.Item>
@@ -66,11 +66,11 @@ function Header() {
                                 <NavDropdown.Item className='ps-4'>Car Electronics</NavDropdown.Item>
                                 <NavDropdown.Item className='ps-4'>Equipment</NavDropdown.Item>
                             </NavDropdown>
-                            <Form className="search d-flex ms-2">
+                            <Form className="search d-flex ps-2 col-8 border-start border-1">
                                 <Form.Control
                                     type="search"
                                     placeholder="Search for products"
-                                    className="me-2 bg-transparent border-start border-1 rounded-0"
+                                    className="ps-2 me-2 bg-transparent rounded-0"
                                     aria-label="Search"
                                 />
                                 <Button variant=""><i className="fa-solid fa-magnifying-glass"></i></Button>
@@ -82,6 +82,7 @@ function Header() {
                             <Link to="" className='account text-decoration-none d-flex align-items-center'><i className="fa-solid fa-cart-shopping fa-lg"></i></Link>
                         </div>
                     </Nav>
+
                 </Navbar.Collapse>
             </Navbar>
         </div>
