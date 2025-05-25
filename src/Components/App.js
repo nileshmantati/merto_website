@@ -4,6 +4,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route } from "react-router";
 import Header from './Header';
+import Homeslider from './Homeslider';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<Header />} />
         {/* <Route path="step-3" element={<StepThree />} /> */}
       </Routes>
+      <Homeslider />
     </div>
   );
 }

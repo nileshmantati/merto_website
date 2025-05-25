@@ -1,0 +1,29 @@
+.slider_section {
+    background-color: #DDCFB8;
+}
+
+.slider_section .item {
+    padding-left: 24rem;
+    /* background-image: url('../img/slide1-demo3.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.slider_section .text_box {
+    font-family: "Poppins";
+}
+
+.slider_section .item .btn {
+    color: black;
+    background-color: transparent;
+    border-color: black;
+    font-size: .8rem;
+    font-weight: 600;
+    transition: all ease-in-out .4s;
+}
+
+.slider_section .item .btn:hover {
+    color: #ffffff;
+    background-color: black;
+}

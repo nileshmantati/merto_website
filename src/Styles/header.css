@@ -88,6 +88,7 @@
 
 .account {
     color: black;
+    font-family: "Poppins";
     transition: all ease-in-out .4s;
 }
 
@@ -106,11 +107,6 @@
 .header_middle {
     z-index: 5;
 }
-
-/* .header_main_middle {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-} */
 
 .header_middle_m {
     background-color: #f1f1f1;
@@ -238,8 +234,7 @@
     transition: all ease-in-out .2s;
 }
 
-.vertical_menu ul li:hover a,
-.vertical_menu ul li:hover .verti_menu_icons {
+.vertical_menu ul li:hover a {
     color: #A3381C;
 }
 
