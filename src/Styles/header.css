@@ -181,13 +181,13 @@
     padding-top: .6rem;
     padding-bottom: .6rem;
     background-color: #A3381C;
-    border-radius: 7px 7px 7px 7px;
+    border-radius: 7px 7px 0px 0px;
     transition: all ease-in-out 1s;
 }
 
-.vertical_menu_box:hover .vertical_menu {
+/* .vertical_menu_box:hover .vertical_menu {
     display: block;
-}
+} */
 
 .vertical_menu_box:hover {
     border-radius: 7px 7px 0px 0px;
@@ -215,7 +215,7 @@
     background-color: #ffffff;
     z-index: 10;
     border-radius: 0px 0px 7px 7px;
-    display: none;
+    /* display: none; */
     transition: all ease-in-out .4s;
 }
 
