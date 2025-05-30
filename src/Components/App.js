@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route } from "react-router";
 import Header from './Header';
 import Homeslider from './Homeslider';
+import Facilities from './Facilities';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         {/* <Route path="step-3" element={<StepThree />} /> */}
       </Routes>
       <Homeslider />
+      <Facilities />
     </div>
   );
 }

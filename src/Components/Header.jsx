@@ -106,7 +106,7 @@ function Header() {
                                         </div>
                                     </a>
                                 </div>
-                                <nav className="vertical_menu position-absolute overflow-hidden bg-white">
+                                <nav className="vertical_menu position-absolute overflow-hidden bg-primary">
                                     <ul className="mb-0 ps-0 d-flex flex-column row-gap-1">
                                         <li className="py-2 px-4 border-bottom border-1">
                                             <img src={require('../img/icon-1-1.png')} alt="" />
@@ -140,7 +140,7 @@ function Header() {
                                             <img src={require('../img/icon-8-1.png')} alt="" />
                                             <a href="#" className="text-decoration-none text-capitalize">outdoor</a>
                                         </li>
-                                        <li className="py-2 px-4 border-bottom border-1">
+                                        <li className="py-2 px-4">
                                             <img src={require('../img/icon-9-1.png')} alt="" />
                                             <a href="#" className="text-decoration-none text-capitalize">sale off</a>
                                         </li>
