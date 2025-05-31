@@ -6,6 +6,7 @@ import { Routes, Route } from "react-router";
 import Header from './Header';
 import Homeslider from './Homeslider';
 import Facilities from './Facilities';
+import Week_sales from './Week_sales';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       </Routes>
       <Homeslider />
       <Facilities />
+      <Week_sales />
     </div>
   );
 }
