@@ -1,5 +1,10 @@
 .weekslider {
     background-color: #DDCFB8;
+    font-family: "Poppins";
+}
+
+.weekslider .item {
+    border: 1px solid gray;
 }
 
 .img_box img {
@@ -7,10 +12,34 @@
     height: 100%;
 }
 
-.slider_section .text_box {
+.weekslider .text_box {
     font-family: "Poppins";
 }
 
-.slider_section .text_box h1 {
+.weekslider .text_box h6 {
     font-weight: 600;
+}
+
+.weekslider .text_box p {
+    font-size: .9rem;
+}
+
+.weekslider .text_box span {
+    color: rgb(206, 206, 206);
+    font-weight: 400;
+    font-size: .8rem;
+}
+
+.weekslider .discount {
+    color: #ffffff;
+    background-color: #A3381C;
+    font-size: .8rem;
+    border-radius: 4px;
+}
+
+.weekslider .sold {
+    color: #ffffff;
+    background-color: gray;
+    font-size: .8rem;
+    border-radius: 4px;
 }
