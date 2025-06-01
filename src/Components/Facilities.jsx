@@ -25,7 +25,7 @@ function Facilities() {
     ];
     return (
         <div>
-            <div className="facility_box px-lg-5 px-md-3 py-5">
+            <div className="facility_box container py-5">
                 <div className="container-fluid px-0 d-flex column-md-gap-5 flex-wrap flex-lg-nowrap row-gap-5">
                     {Facility_card.map((item, index) => (
                         <div key={index} className="shipping_box d-flex col-12 col-sm-6 col-lg border-md-1 border-md-end flex-wrap row-gap-4">

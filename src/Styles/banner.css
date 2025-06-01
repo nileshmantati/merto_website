@@ -26,7 +26,7 @@
 
 .left_banner h2,
 .right_down h2 {
-    font-size: 2.2rem;
+    /* font-size: 6vw; */
     font-family: "Poppins";
 }
 
@@ -45,7 +45,6 @@
 }
 
 .right_up h2 {
-    font-size: 2.2rem;
     font-family: "Poppins";
 }
 
@@ -63,13 +62,9 @@
 }
 
 .right_up .tag {
-    width: 4.5rem;
-    height: 4.5rem;
     background-color: #A3381C;
-    top: 7rem;
-    right: 7.8rem;
-}
-
-.right_up .tag h3 {
-    font-size: 1.5rem;
+    top: 9vw;
+    right: 9vw;
+    width: 4rem;
+    height: 4rem;
 }

@@ -121,7 +121,7 @@ function Weeksales() {
     },
     ];
     return (
-        <section className='weekslider px-md-3 px-lg-5 py-5'>
+        <section className='weekslider container py-5'>
             <div className="weekslider_text text-start">
                 <h3>Don't miss this week's sales</h3>
             </div>
