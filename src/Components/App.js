@@ -7,6 +7,7 @@ import Header from './Header';
 import Homeslider from './Homeslider';
 import Facilities from './Facilities';
 import Weeksales from './Weeksales';
+import Banner from './Banner';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Homeslider />
       <Facilities />
       <Weeksales />
+      <Banner />
     </div>
   );
 }
