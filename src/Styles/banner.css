@@ -1,6 +1,8 @@
 .banner_main img {
     width: 100%;
     height: 100%;
+    transition: all ease-in-out .4s;
+    overflow: hidden;
 }
 
 .left_banner {
@@ -26,7 +28,6 @@
 
 .left_banner h2,
 .right_down h2 {
-    /* font-size: 6vw; */
     font-family: "Poppins";
 }
 
@@ -67,4 +68,10 @@
     right: 9vw;
     width: 4rem;
     height: 4rem;
+}
+
+.left_banner img:hover,
+.right_up img:hover,
+.right_down img:hover {
+    transform: scale(1.2);
 }
