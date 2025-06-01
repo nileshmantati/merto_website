@@ -1,10 +1,9 @@
 .weekslider {
-    background-color: #DDCFB8;
     font-family: "Poppins";
 }
 
 .weekslider .item {
-    border: 1px solid gray;
+    border: 1px solid rgb(222, 222, 222);
 }
 
 .img_box img {
@@ -17,17 +16,48 @@
 }
 
 .weekslider .text_box h6 {
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 1.2rem;
+    cursor: pointer;
 }
 
-.weekslider .text_box p {
+.weekslider .text_box a {
+    color: black;
     font-size: .9rem;
+    transition: all ease-in-out .3s;
+}
+
+.group_btn {
+    display: flex;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.group_btn a {
+    color: black;
+    background-color: rgb(238, 238, 238);
+    transition: all ease-in-out .4s;
+}
+
+.group_btn a:hover {
+    color: rgb(238, 238, 238);
+    background-color: black;
+}
+
+.weekslider .item:hover .group_btn {
+    opacity: 1;
+    transform: translateX(0);
 }
 
 .weekslider .text_box span {
     color: rgb(206, 206, 206);
     font-weight: 400;
     font-size: .8rem;
+}
+
+.weekslider .text_box a:hover {
+    color: #A3381C;
 }
 
 .weekslider .discount {

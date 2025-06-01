@@ -53,7 +53,11 @@ function Weeksales() {
         emptystars: <i className="fa-regular fa-star fa-sm" />,
         mainprice: "$50",
         cutprice: "$75",
-        discount: "-33%"
+        discount: "-33%",
+        like: <i className="fa-regular fa-heart fa-sm" />,
+        compare: <i className="fa-solid fa-down-left-and-up-right-to-center fa-sm" />,
+        search: <i className="fa-solid fa-magnifying-glass fa-sm" />,
+        cart: <i className="fa-solid fa-cart-shopping fa-sm" />
     },
     {
         indexs: 2,
@@ -64,7 +68,11 @@ function Weeksales() {
         emptystars: <i className="fa-regular fa-star fa-sm" />,
         mainprice: "$192",
         cutprice: "$239",
-        discount: "-20%"
+        discount: "-20%",
+        like: <i className="fa-regular fa-heart fa-sm" />,
+        compare: <i className="fa-solid fa-down-left-and-up-right-to-center fa-sm" />,
+        search: <i className="fa-solid fa-magnifying-glass fa-sm" />,
+        cart: <i className="fa-solid fa-cart-shopping fa-sm" />
     },
     {
         indexs: 3,
@@ -75,7 +83,11 @@ function Weeksales() {
         emptystars: <i className="fa-regular fa-star fa-sm" />,
         mainprice: "$569",
         cutprice: "$1,099",
-        discount: "-48%"
+        discount: "-48%",
+        like: <i className="fa-regular fa-heart fa-sm" />,
+        compare: <i className="fa-solid fa-down-left-and-up-right-to-center fa-sm" />,
+        search: <i className="fa-solid fa-magnifying-glass fa-sm" />,
+        cart: <i className="fa-solid fa-cart-shopping fa-sm" />
     },
     {
         indexs: 4,
@@ -86,7 +98,11 @@ function Weeksales() {
         emptystars: <i className="fa-regular fa-star fa-sm" />,
         mainprice: "$1,465",
         cutprice: "$1,536",
-        discount: "SOLD OUT"
+        discount: "SOLD OUT",
+        like: <i className="fa-regular fa-heart fa-sm" />,
+        compare: <i className="fa-solid fa-down-left-and-up-right-to-center fa-sm" />,
+        search: <i className="fa-solid fa-magnifying-glass fa-sm" />,
+        cart: <i className="fa-solid fa-cart-shopping fa-sm" />
     },
     {
         indexs: 5,
@@ -97,7 +113,11 @@ function Weeksales() {
         emptystars: <i className="fa-regular fa-star fa-sm" />,
         mainprice: "$138",
         cutprice: "$188",
-        discount: "-26%"
+        discount: "-26%",
+        like: <i className="fa-regular fa-heart fa-sm" />,
+        compare: <i className="fa-solid fa-down-left-and-up-right-to-center fa-sm" />,
+        search: <i className="fa-solid fa-magnifying-glass fa-sm" />,
+        cart: <i className="fa-solid fa-cart-shopping fa-sm" />
     },
     ];
     return (
@@ -108,60 +128,70 @@ function Weeksales() {
             <Slider {...settings} className='slider py-4 py-lg-0 mt-4'>
                 {weekSlider.map((item, index) => (
                     <div key={index} className='item d-flex py-4 flex-wrap p-3 rounded-3 bg-white'>
-                        <div className="img_box col-12 position-relative">
-                            {item.img}
-                            <div className={`position-absolute top-0 start-0 p-1 
+                        <a href="#">
+                            <div className="img_box col-12 position-relative">
+                                {item.img}
+                                <div className={`position-absolute top-0 start-0 p-1 
                             ${item.discount === 'SOLD OUT' ? 'sold' : 'discount'}
                             ` }>{item.discount}</div>
-                        </div>
+                                <div className='group_btn position-absolute top-0 end-0 p-1 d-flex flex-column row-gap-1'>
+                                    <a href="#" className='px-2 py-1 rounded-2'>{item.like}</a>
+                                    <a href="#" className='px-2 py-1 rounded-2'>{item.compare}</a>
+                                    <a href="#" className='px-2 py-1 rounded-2'>{item.search}</a>
+                                    <a href="#" className='px-2 py-1 rounded-2'>{item.cart}</a>
+                                </div>
+                            </div>
+                        </a>
                         <div className="text_box d-flex flex-column align-items-start pt-3">
-                            <p className='mb-0 text-start'>{item.description}</p>
-                            <h6 className='text-capitalize text-start d-flex align-items-center'>{item.mainprice} <span className='text-decoration-line-through d-flex align-items-center ms-2'>{item.cutprice}</span></h6>
-                            <div className="star_box">
+                            <a href="#" className='text-decoration-none'>
+                                <p className='mb-0 text-start'>{item.description}</p>
+                            </a>
+                            <h6 className='text-capitalize text-start d-flex align-items-center mt-2'>{item.mainprice} <span className='text-decoration-line-through d-flex align-items-center ms-2'>{item.cutprice}</span></h6>
+                            <div className="star_box mt-2">
                                 {item.indexs === 1 && (
-                                    <>
+                                    <div className='d-flex column-gap-1'>
                                         {item.fullstars}
                                         {item.fullstars}
                                         {item.fullstars}
                                         {item.fullstars}
                                         {item.halfstars}
-                                    </>
+                                    </div>
                                 )}
                                 {item.indexs === 2 && (
-                                    <>
+                                    <div className='d-flex column-gap-1'>
                                         {item.fullstars}
                                         {item.fullstars}
                                         {item.fullstars}
                                         {item.fullstars}
                                         {item.fullstars}
-                                    </>
+                                    </div>
                                 )}
                                 {item.indexs === 3 && (
-                                    <>
+                                    <div className='d-flex column-gap-1'>
                                         {item.fullstars}
                                         {item.fullstars}
                                         {item.fullstars}
                                         {item.fullstars}
                                         {item.emptystars}
-                                    </>
+                                    </div>
                                 )}
                                 {item.indexs === 4 && (
-                                    <>
+                                    <div className='d-flex column-gap-1'>
                                         {item.fullstars}
                                         {item.fullstars}
                                         {item.fullstars}
                                         {item.fullstars}
                                         {item.emptystars}
-                                    </>
+                                    </div>
                                 )}
                                 {item.indexs === 5 && (
-                                    <>
+                                    <div className='d-flex column-gap-1'>
                                         {item.emptystars}
                                         {item.emptystars}
                                         {item.emptystars}
                                         {item.emptystars}
                                         {item.emptystars}
-                                    </>
+                                    </div>
                                 )}
                             </div>
                         </div>
