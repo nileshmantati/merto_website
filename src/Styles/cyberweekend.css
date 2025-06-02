@@ -1,0 +1,11 @@
+.content .box a {
+    color: #A3381C;
+}
+
+.dark_box {
+    background-color: #A3381C;
+}
+
+.dark_box a {
+    color: #ffffff;
+}
