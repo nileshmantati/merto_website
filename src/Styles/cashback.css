@@ -1,0 +1,18 @@
+.cash_back {
+    background-color: #D3EFDB;
+    font-family: "Poppins";
+}
+
+.cash_back_text h3 {
+    font-family: "Poppins";
+    font-weight: 600;
+}
+
+.cash_back_text span {
+    font-size: .8rem;
+}
+
+.cash_back_text a {
+    color: black;
+    font-size: .8rem;
+}

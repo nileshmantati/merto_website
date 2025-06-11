@@ -3,9 +3,169 @@
 }
 
 .dark_box {
+    width: 8rem;
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #A3381C;
+    border-radius: 50%;
+    transition: all ease-in-out .3s;
 }
 
 .dark_box a {
     color: #ffffff;
+}
+
+.box {
+    width: 8rem;
+    height: 8rem;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #A3381C;
+    border-radius: 50%;
+    z-index: 2;
+    transition: all ease-in-out .3s;
+}
+
+.box:hover {
+    border: none;
+    background-color: #F6EBE8;
+    transform: translateY(-5px);
+}
+
+.dark_box:hover {
+    transform: translateY(-5px);
+}
+
+.bg-title h4 {
+    font-family: "Poppins";
+    font-size: 8rem;
+    color: transparent;
+    -webkit-text-stroke: 1px #A1361B1A;
+    transform: translateY(-60px);
+    z-index: -1;
+    transition: all ease-in-out .5s;
+}
+
+.bg-title h4:hover {
+    transform: translateY(-30px);
+}
+
+.new_arrivals {
+    font-family: "Poppins";
+}
+
+.Products_box_section {
+    font-family: "Poppins";
+}
+
+.Products_box_section .Products_box {
+    border: 1px solid rgb(222, 222, 222);
+}
+
+.img_box img {
+    width: 100%;
+    height: 100%;
+}
+
+.Products_box_section .text_box {
+    font-family: "Poppins";
+}
+
+.Products_box_section .text_box h6 {
+    font-weight: 500;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.Products_box_section .text_box a {
+    color: black;
+    font-size: .9rem;
+    transition: all ease-in-out .3s;
+}
+
+.group_btn {
+    display: flex;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.group_btn a {
+    color: black;
+    background-color: rgb(238, 238, 238);
+    transition: all ease-in-out .4s;
+}
+
+.group_btn a:hover {
+    color: rgb(238, 238, 238);
+    background-color: black;
+}
+
+.Products_box_section .Products_box:hover .group_btn {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.Products_box:hover {
+    box-shadow: 0px 0px 6px rgb(107, 107, 107);
+}
+
+.Products_box_section .text_box span {
+    color: rgb(174, 174, 174);
+    font-weight: 400;
+    font-size: .8rem;
+}
+
+.Products_box_section .text_box a:hover {
+    color: #A3381C;
+}
+
+.badge.hot {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 4px;
+    font-size: .8rem;
+    background: #F05025;
+    color: white;
+    padding: 5px 6px;
+    font-size: 12px;
+}
+
+.badge.discount {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #a93f23;
+    color: white;
+    padding: 5px 6px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.new_arrivals a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    overflow: hidden;
+    transition: all ease-in-out .5s;
+}
+
+.new_arrivals .all_products::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0;
+    display: block;
+    border-bottom: 1px solid;
+    transition: all ease-in-out .5s;
+}
+
+.new_arrivals .all_products:hover::before {
+    width: 100%;
 }

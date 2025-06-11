@@ -9,6 +9,7 @@ import Facilities from './Facilities';
 import Weeksales from './Weeksales';
 import Banner from './Banner';
 import Cyberweekend from './Cyberweekend';
+import Cashback from './Cashback';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Weeksales />
       <Banner />
       <Cyberweekend />
+      <Cashback />
     </div>
   );
 }
