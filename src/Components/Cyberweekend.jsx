@@ -147,7 +147,7 @@ function Cyberweekend() {
                 </div>
             </div>
             <div className="new_arrivals">
-                <h2 className='text-capitalize fs-3 fw-bold'>New Arrivals</h2>
+                <h2 className='text-capitalize fs-3 mb-4'>New Arrivals</h2>
                 <div className="Products_box_section d-flex pb-4">
                     <Row className="g-3 flex-wrap">
                         {cyberweekend.map((item, index) => (

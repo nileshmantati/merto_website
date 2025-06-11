@@ -14,5 +14,38 @@
 
 .cash_back_text a {
     color: black;
+    text-decoration: none;
     font-size: .8rem;
+    position: relative;
+    transition: all ease-in-out .5s;
+}
+
+.cash_back_text a::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0;
+    display: block;
+    border-bottom: 1px solid;
+    transition: all ease-in-out .5s;
+}
+
+.cash_back_text a:hover::before {
+    width: 100%;
+}
+
+.vew_btn a {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #26753C;
+    font-family: "Poppins";
+    font-size: .8rem;
+    transition: all ease-in-out .4s;
+}
+
+.vew_btn a:hover {
+    outline: 1px solid #26753C;
+    color: #26753C;
+    background-color: transparent;
 }

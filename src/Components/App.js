@@ -10,6 +10,7 @@ import Weeksales from './Weeksales';
 import Banner from './Banner';
 import Cyberweekend from './Cyberweekend';
 import Cashback from './Cashback';
+import Shopdepartment from './Shopdepartment';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <Banner />
       <Cyberweekend />
       <Cashback />
+      <Shopdepartment />
     </div>
   );
 }

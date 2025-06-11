@@ -1,0 +1,26 @@
+.heading_text h2 {
+    font-family: "Poppins";
+    font-weight: 600;
+}
+
+.card-title a {
+    text-decoration: none !important;
+    color: black;
+    font-size: 1.1rem;
+    font-family: "Poppins";
+}
+
+.shop_btn {
+    text-decoration: none;
+    color: black;
+    font-family: "Poppins";
+    font-weight: 600;
+    font-size: .9rem;
+    background-color: transparent;
+    border: none;
+}
+
+.shop_btn:hover {
+    color: black;
+    background-color: transparent;
+}
