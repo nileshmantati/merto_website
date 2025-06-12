@@ -1,0 +1,77 @@
+footer {
+    font-family: "Poppins";
+    background-color: #F7F7F7;
+}
+
+footer .newsletter-input {
+    border-radius: 8px;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .newsletter-btn {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    z-index: 2;
+    font-size: 1.2rem;
+    color: black;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+footer svg,
+footer i {
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+footer svg:hover,
+footer i:hover {
+    color: #A3381C;
+}
+
+.number {
+    text-decoration: none;
+    color: black;
+    transition: all ease-in-out .3s;
+}
+
+.number:hover {
+    color: #A3381C;
+}
+
+.footer_menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_menu li {
+    list-style: none;
+}
+
+.footer_menu li a {
+    color: black;
+    text-decoration: none;
+    transition: all ease-in-out .3s;
+}
+
+.footer_menu li a:hover {
+    color: #A3381C;
+}
+
+.copy_icon i {
+    color: black;
+    transition: all ease-in-out .3s;
+}
+
+.copy_icon i:hover {
+    color: #A3381C;
+}

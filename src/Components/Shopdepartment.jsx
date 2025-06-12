@@ -1,14 +1,12 @@
 import React from 'react';
 import '../Styles/shopdepartment.css';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
+import { Container, Row, Col, Button } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
 import imageBox1 from '../img/image-box-1.jpg';
 import imageBox2 from '../img/image-box-2.jpg';
 import imageBox3 from '../img/image-box-3.jpg';
 import imageBox4 from '../img/image-box-4.jpg';
+import { Link } from "react-router-dom";
 
 function Shopdepartment() {
     const shopdepartment = [{
@@ -29,28 +27,30 @@ function Shopdepartment() {
     }
     ];
     return (
-        <section className='cash_back_section px-4 px-md-0 py-4 mt-5'>
+        <section className='cash_back_section px-4 px-md-0 py-4 my-5'>
             <Container fluid="md">
                 <Row>
                     <div className="heading_text">
                         <h2 className='fs-3 mb-4'>Shop by Department</h2>
                     </div>
-                    <Row>
-                        <div className="department_main_box">
+                    <div className="department_main_box">
+                        <Row>
                             {shopdepartment.map((item, index) => (
-                                <Col md={6} lg={3} key={index}>
-                                    <Card style={{ width: '18rem' }} className='border-0'>
-                                        <Card.Img variant="top" src={item.img} className='rounded-circle' />
+                                <Col sm={6} md={6} lg={3} key={index}>
+                                    <Card className='px-3 border-0'>
+                                        <Link to="#">
+                                            <Card.Img variant="top" src={item.img} className='rounded-circle' />
+                                        </Link>
                                         <Card.Body>
-                                            <Card.Title><a href="#">{item.title}</a></Card.Title>
+                                            <Card.Title><Link to="#">{item.title}</Link></Card.Title>
                                             <Button className='shop_btn'>Shop now<i className="fa-solid fa-arrow-right ms-2" />
                                             </Button>
                                         </Card.Body>
                                     </Card>
                                 </Col>
                             ))}
-                        </div>
-                    </Row>
+                        </Row>
+                    </div>
                 </Row>
             </Container>
         </section >

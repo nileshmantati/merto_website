@@ -3,6 +3,10 @@
     font-weight: 600;
 }
 
+.card-img-top:hover {
+    animation: wobble_animation 1s ease-in-out;
+}
+
 .card-title a {
     text-decoration: none !important;
     color: black;
@@ -23,4 +27,30 @@
 .shop_btn:hover {
     color: black;
     background-color: transparent;
+}
+
+@keyframes wobble_animation {
+    16.65% {
+        transform: translateX(8px);
+    }
+
+    33.3% {
+        transform: translateX(-6px);
+    }
+
+    49.95% {
+        transform: translateX(4px);
+    }
+
+    66.6% {
+        transform: translateX(-2px);
+    }
+
+    83.25% {
+        transform: translateX(1px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
 }

@@ -11,6 +11,8 @@ import Banner from './Banner';
 import Cyberweekend from './Cyberweekend';
 import Cashback from './Cashback';
 import Shopdepartment from './Shopdepartment';
+import Logoslider from './Logoslider';
+import Footer from './Footer';
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
       <Cyberweekend />
       <Cashback />
       <Shopdepartment />
+      <Logoslider />
+      <Footer />
     </div>
   );
 }
