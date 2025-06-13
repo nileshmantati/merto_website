@@ -269,12 +269,12 @@
 .main_bottom_r .top_deal a {
     color: black;
     font-weight: 800;
-    font-family: "Mulish", sans-serif;
+    font-family: "Poppins";
     transition: all ease-in-out .2s;
 }
 
 .main_bottom_r span {
-    font-family: "Mulish", sans-serif;
+    font-family: "Poppins";
     font-size: .7rem;
     font-weight: 800;
     background-color: rgba(221, 40, 49, 1);
@@ -303,16 +303,13 @@
     border-top: 1px solid #e6e6e6;
 }
 
-.mini_nav {
-    width: 2.6rem;
-}
-
 .mini_nav_div {
     /* background-color: rgb(204, 130, 130); */
     position: absolute;
-    top: 3.9rem;
-    left: -325px;
-    width: 400px;
+    top: 5.5rem;
+    left: -12.8rem;
+    width: 18rem;
+    /* width: 400px; */
     background-color: #ffffff;
 }
 
@@ -324,11 +321,16 @@
     border-bottom: 1px solid #e6e6e6;
 }
 
-.mini_nav_ul li .nav-link {
+.mini_nav_ul li a {
     color: black;
     font-weight: 800;
-    font-family: "Mulish", sans-serif;
     font-size: 1rem;
+    text-decoration: none;
+    font-family: "Poppins";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
     transition: all ease-in-out .2s;
 }
 
@@ -343,7 +345,6 @@
 
 .mini_nav_top a {
     color: black;
-    font-family: "Mulish", sans-serif;
     font-weight: 500;
     font-size: 0.9rem;
     background-color: #e6e6e6;

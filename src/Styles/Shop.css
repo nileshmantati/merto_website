@@ -1,0 +1,124 @@
+.heading_text {
+    font-family: "Poppins";
+}
+
+.heading_link a {
+    font-family: "Poppins";
+    text-decoration: none;
+    color: black;
+}
+
+.heading_link {
+    font-family: "Poppins";
+}
+
+.heading_link a:hover {
+    color: #A3381C;
+}
+
+.heading_link_arrow {
+    color: rgb(187, 187, 187);
+}
+
+.heading_text h2 {
+    font-family: "Poppins";
+    font-weight: 600;
+}
+
+.categories_slider a {
+    text-decoration: none;
+    font-family: "Poppins";
+    font-size: 1rem;
+    color: black;
+    transition: all ease-in-out .3s;
+}
+
+.categories_slider a:hover {
+    color: #A3381C;
+}
+
+.categories_slider .item {
+    transition: all ease-in-out .4s;
+}
+
+.img_arrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    transition: all ease-in-out .4s;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+.img_arrow i {
+    transform: translateX(-10px);
+    transition: all ease-in-out .8s;
+}
+
+.categories_slider .item:hover .img_arrow {
+    display: flex;
+}
+
+.categories_slider .item:hover i {
+    transform: translateX(0px);
+}
+
+.color_filter li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: all ease-in-out .3s;
+}
+
+.color_filter a {
+    text-decoration: none;
+    color: black;
+    font-size: .9rem;
+    font-family: "Poppins";
+}
+
+.color_filter .color {
+    border-radius: 3px;
+    overflow: hidden;
+    border: 1px solid rgb(199, 199, 199);
+}
+
+.color_filter .count {
+    color: gray;
+}
+
+.color_filter li:hover a,
+.color_filter li:hover .count {
+    color: #A3381C;
+}
+
+.brand_filter li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    transition: all ease-in-out .3s;
+}
+
+.brand_filter input {
+    width: 15px;
+}
+
+.brand_filter label {
+    font-size: .9rem;
+    font-family: "Poppins";
+}
+
+.brand_filter .count {
+    color: gray;
+}
+
+.brand_filter li:hover label {
+    color: #A3381C;
+}

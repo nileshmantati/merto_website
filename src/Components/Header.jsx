@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import '../Styles/header.css';
 import '../Styles/all.min.css';
 import { Container, Form, Button } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom';
 
 function Header() {
     return (
@@ -98,40 +99,31 @@ function Header() {
                                         <span className="py-2 px-3"><i className="fa-solid fa-xmark fs-4" /></span>
                                     </div>
                                     <ul className="navbar-nav mini_nav_ul col-12 flex-column mb-lg-0 overflow-y-scroll">
-                                        <li className="nav-item py-1 px-3">
-                                            <a className="nav-link fw-medium d-flex justify-content-between align-items-center border-0"
-                                                aria-current="page">Home
-                                                <i className="fa-solid fa-plus ms-1 arrow-icon" />
-
-                                            </a>
+                                        <li className="nav-item py-2 px-3">
+                                            <NavLink to="/" className="fw-medium">Home
+                                                <i className="fa-solid fa-plus ms-1 arrow-icon" /></NavLink>
                                         </li>
-                                        <li className="nav-item py-1 px-3">
-                                            <a className="nav-link fw-medium d-flex justify-content-between align-items-center">Shop
-                                                <i className="fa-solid fa-plus ms-1 arrow-icon" />
-                                            </a>
+                                        <li className="nav-item py-2 px-3">
+                                            <NavLink to="/shoppage" className="fw-medium">Shop
+                                                <i className="fa-solid fa-plus ms-1 arrow-icon" /></NavLink>
                                         </li>
-                                        <li className="nav-item py-1 px-3">
-                                            <a className="nav-link fw-medium d-flex justify-content-between align-items-center">Products
-                                                <i className="fa-solid fa-plus ms-1 arrow-icon" />
-                                            </a>
+                                        <li className="nav-item py-2 px-3">
+                                            <NavLink to="/" className="fw-medium">Products
+                                                <i className="fa-solid fa-plus ms-1 arrow-icon" /></NavLink>
                                         </li>
-                                        <li className="nav-item py-1 px-3">
-                                            <a className="nav-link fw-medium d-flex justify-content-between align-items-center">Pages
-                                                <i className="fa-solid fa-plus ms-1 arrow-icon" />
-                                            </a>
+                                        <li className="nav-item py-2 px-3">
+                                            <NavLink to="/" className="fw-medium">Pages
+                                                <i className="fa-solid fa-plus ms-1 arrow-icon" /></NavLink>
                                         </li>
-                                        <li className="nav-item py-1 px-3">
-                                            <a className="nav-link fw-medium text-start">Blog
-                                            </a>
+                                        <li className="nav-item py-2 px-3">
+                                            <NavLink to="/" className="fw-medium">Blog</NavLink>
                                         </li>
-                                        <li className="nav-item py-1 px-3">
-                                            <a className="nav-link fw-medium text-start">Abous us
-                                            </a>
+                                        <li className="nav-item py-2 px-3">
+                                            <NavLink to="/" className="fw-medium">Abous us</NavLink>
                                         </li>
-                                        <li className="nav-item py-1 px-3 ">
-                                            <a className="nav-link fw-medium d-flex justify-content-between align-items-center"><span className='text_gray'>Recently viewed</span>
-                                                <i className="fa-solid fa-plus ms-1 arrow-icon" />
-                                            </a>
+                                        <li className="nav-item py-2 px-3">
+                                            <NavLink to="/" className="fw-medium"><span className='text_gray'>Recently viewed</span>
+                                                <i className="fa-solid fa-plus ms-1 arrow-icon" /></NavLink>
                                         </li>
                                     </ul>
                                     <div className="main_bottom_r py-2 px-3 d-flex justify-content-between align-items-center col-12"
@@ -156,7 +148,7 @@ function Header() {
                     </Navbar>
                 </Container >
             </div >
-            <div className="header_bottom px-lg-5 px-md-3 d-none d-md-block bg-white">
+            <div className="header_bottom px-lg-5 px-md-3 d-none d-md-block bg-white border-1 border-bottom">
                 <Container fluid="lg">
                     <div className="header_main_bottom col d-flex align-items-center">
                         <div className="vertical_menu_box col-1 col-xl-3 position-relative">
@@ -213,23 +205,31 @@ function Header() {
                         <div className="main_menu_box py-3 col ms-4">
                             <nav className="main_menu col-12 h-100">
                                 <ul className="ps-0 mb-0 col-12 h-100 d-flex gap-2 gap-lg-4">
-                                    <li><a href="index.html" className="text-decoration-none text-capitalize">Home
-                                        <i className="fa-solid fa-chevron-down ms-2 fa-sm arrow_icon" />
-                                    </a></li>
-                                    <li><a href="laptop.html" className="text-decoration-none text-capitalize">shop
-                                        <i className="fa-solid fa-chevron-down ms-2 fa-sm arrow_icon" />
-                                    </a></li>
-                                    <li><a href="smartphone.html" className="text-decoration-none text-capitalize">products
-                                        <i className="fa-solid fa-chevron-down ms-2 fa-sm arrow_icon" />
-                                    </a></li>
-                                    <li><a href="headphone.html" className="text-decoration-none text-capitalize">pages
-                                        <i className="fa-solid fa-chevron-down ms-2 fa-sm arrow_icon" />
-                                    </a></li>
-                                    <li><a href="camera.html" className="text-decoration-none text-capitalize">blog</a></li>
-                                    <li><a href="camera.html" className="text-decoration-none text-capitalize">about us</a></li>
-                                    <li className='ms-auto'><a href="smartphone.html" className="text-decoration-none text-capitalize">recently viewed
-                                        <i className="fa-solid fa-chevron-down ms-2 fa-sm arrow_icon" />
-                                    </a></li>
+                                    <li>
+                                        <NavLink to="/" className="text-decoration-none text-capitalize">Home
+                                            <i className="fa-solid fa-chevron-down ms-2 fa-sm arrow_icon" /></NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to="/shoppage" className="text-decoration-none text-capitalize">shop
+                                            <i className="fa-solid fa-chevron-down ms-2 fa-sm arrow_icon" /></NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to="/" className="text-decoration-none text-capitalize">products
+                                            <i className="fa-solid fa-chevron-down ms-2 fa-sm arrow_icon" /></NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to="/" className="text-decoration-none text-capitalize">pages
+                                            <i className="fa-solid fa-chevron-down ms-2 fa-sm arrow_icon" /></NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to="/" className="text-decoration-none text-capitalize">blog</NavLink>
+                                    </li>
+                                    <li>
+                                        <NavLink to="/" className="text-decoration-none text-capitalize">about us</NavLink>
+                                    </li>
+                                    <li className='ms-auto'>
+                                        <NavLink to="/" className="text-decoration-none text-capitalize">recently viewed<i className="fa-solid fa-chevron-down ms-2 fa-sm arrow_icon" /></NavLink>
+                                    </li>
                                 </ul>
                             </nav>
                         </div>
