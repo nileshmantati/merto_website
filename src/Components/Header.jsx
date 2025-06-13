@@ -108,7 +108,7 @@ function Header() {
                                                 <i className="fa-solid fa-plus ms-1 arrow-icon" /></NavLink>
                                         </li>
                                         <li className="nav-item py-2 px-3">
-                                            <NavLink to="/" className="fw-medium">Products
+                                            <NavLink to="/product" className="fw-medium">Products
                                                 <i className="fa-solid fa-plus ms-1 arrow-icon" /></NavLink>
                                         </li>
                                         <li className="nav-item py-2 px-3">
@@ -214,7 +214,7 @@ function Header() {
                                             <i className="fa-solid fa-chevron-down ms-2 fa-sm arrow_icon" /></NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/" className="text-decoration-none text-capitalize">products
+                                        <NavLink to="/product" className="text-decoration-none text-capitalize">products
                                             <i className="fa-solid fa-chevron-down ms-2 fa-sm arrow_icon" /></NavLink>
                                     </li>
                                     <li>

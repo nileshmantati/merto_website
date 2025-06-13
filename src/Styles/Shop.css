@@ -1,7 +1,7 @@
 .heading_text h3 {
     font-family: "Poppins";
     font-weight: 600;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .heading_link a {
@@ -208,6 +208,17 @@
     top: 10px;
     left: 10px;
     background: #a93f23;
+    color: white;
+    padding: 5px 6px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.badge.soldout {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #919191;
     color: white;
     padding: 5px 6px;
     font-size: 12px;

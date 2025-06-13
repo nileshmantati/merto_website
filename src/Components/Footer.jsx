@@ -2,6 +2,7 @@ import React from 'react';
 import '../Styles/Footer.css';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import { Link } from "react-router-dom";
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -47,11 +48,11 @@ const Footer = () => {
                         <div className="px-3">
                             <h6 className="fw-bold">SHOP MORE</h6>
                             <ul className='footer_menu mb-0 ps-0 mt-4 row-gap-3'>
-                                <li><Link to="#">New Arrival</Link></li>
-                                <li><Link to="#">Sale off</Link></li>
-                                <li><Link to="#">Living Room</Link></li>
-                                <li><Link to="#">Bedroom</Link></li>
-                                <li><Link to="#">Dinner Room</Link></li>
+                                <li><NavLink to="/shoppage">New Arrival</NavLink></li>
+                                <li><NavLink to="#">Sale off</NavLink></li>
+                                <li><NavLink to="#">Living Room</NavLink></li>
+                                <li><NavLink to="#">Bedroom</NavLink></li>
+                                <li><NavLink to="#">Dinner Room</NavLink></li>
                             </ul>
                         </div>
                     </Col>
@@ -60,11 +61,11 @@ const Footer = () => {
                     <Col xs={12} sm={6} md={3} lg={2}>
                         <h6 className="fw-bold">&nbsp;</h6>
                         <ul className='footer_menu mb-0 ps-0 mt-4 row-gap-3'>
-                            <li><Link to="#">Bathroom</Link></li>
-                            <li><Link to="#">Kitchen Room</Link></li>
-                            <li><Link to="#">Home Office</Link></li>
-                            <li><Link to="#">Home Decoration</Link></li>
-                            <li><Link to="#">Outdoor</Link></li>
+                            <li><NavLink to="#">Bathroom</NavLink></li>
+                            <li><NavLink to="#">Kitchen Room</NavLink></li>
+                            <li><NavLink to="#">Home Office</NavLink></li>
+                            <li><NavLink to="#">Home Decoration</NavLink></li>
+                            <li><NavLink to="#">Outdoor</NavLink></li>
                         </ul>
                     </Col>
 
@@ -72,11 +73,11 @@ const Footer = () => {
                     <Col xs={12} sm={6} md={3} lg={2}>
                         <h6 className="fw-bold">SHOPPING</h6>
                         <ul className='footer_menu mb-0 ps-0 mt-4 row-gap-3'>
-                            <li><Link to="#">Wishlist</Link></li>
-                            <li><Link to="#">Shop by Brand</Link></li>
-                            <li><Link to="#">Offers</Link></li>
-                            <li><Link to="#">Track order</Link></li>
-                            <li><Link to="#">Size Guide</Link></li>
+                            <li><NavLink to="#">Wishlist</NavLink></li>
+                            <li><NavLink to="#">Shop by Brand</NavLink></li>
+                            <li><NavLink to="#">Offers</NavLink></li>
+                            <li><NavLink to="#">Track order</NavLink></li>
+                            <li><NavLink to="#">Size Guide</NavLink></li>
                         </ul>
                     </Col>
 
@@ -84,11 +85,11 @@ const Footer = () => {
                     <Col xs={12} sm={6} md={3} lg={2}>
                         <h6 className="fw-bold">INFOMATION</h6>
                         <ul className='footer_menu mb-0 ps-0 mt-4 row-gap-3'>
-                            <li><Link to="#">Track Order</Link></li>
-                            <li><Link to="#">Shipping & Returns</Link></li>
-                            <li><Link to="#">About us</Link></li>
-                            <li><Link to="#">Help</Link></li>
-                            <li><Link to="#">Gift Cards</Link></li>
+                            <li><NavLink to="#">Track Order</NavLink></li>
+                            <li><NavLink to="#">Shipping & Returns</NavLink></li>
+                            <li><NavLink to="#">About us</NavLink></li>
+                            <li><NavLink to="#">Help</NavLink></li>
+                            <li><NavLink to="#">Gift Cards</NavLink></li>
                         </ul>
                     </Col>
 
@@ -96,11 +97,11 @@ const Footer = () => {
                     <Col xs={12} sm={6} md={3} lg={1}>
                         <h6 className="fw-bold">ACCOUNT</h6>
                         <ul className='footer_menu mb-0 ps-0 mt-4 row-gap-3'>
-                            <li><Link to="#">Cart</Link></li>
-                            <li><Link to="#">My account</Link></li>
-                            <li><Link to="#">My orders</Link></li>
-                            <li><Link to="#">Wishlist</Link></li>
-                            <li><Link to="#">Affiliate Program</Link></li>
+                            <li><NavLink to="#">Cart</NavLink></li>
+                            <li><NavLink to="#">My account</NavLink></li>
+                            <li><NavLink to="#">My orders</NavLink></li>
+                            <li><NavLink to="#">Wishlist</NavLink></li>
+                            <li><NavLink to="#">Affiliate Program</NavLink></li>
                         </ul>
                     </Col>
                 </div>

@@ -5,12 +5,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route } from "react-router";
 import Homepage from './Homepage';
 import Shoppage from './Shoppage';
+import Product from './Product';
+
 function App() {
   return (
     <div className="App">
       <Routes >
         <Route path="/" element={<Homepage />} />
         <Route path="/shoppage" element={<Shoppage />} />
+        <Route path="/product" element={<Product />} />
       </Routes>
     </div>
   );
