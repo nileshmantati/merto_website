@@ -1,5 +1,6 @@
 import React from 'react';
-import '../Styles/facilities.css'
+import '../Styles/facilities.css';
+import { Container } from 'react-bootstrap';
 
 function Facilities() {
     const Facility_card = [{
@@ -25,20 +26,22 @@ function Facilities() {
     ];
     return (
         <div>
-            <div className="facility_box container py-5">
-                <div className="container-fluid px-0 d-flex column-md-gap-5 flex-wrap flex-lg-nowrap row-gap-5">
-                    {Facility_card.map((item, index) => (
-                        <div key={index} className="shipping_box d-flex col-12 col-sm-6 col-lg border-md-1 border-md-end flex-wrap row-gap-4">
-                            <div className="icon_box col-12 col-xl-2 me-xl-3">
-                                {item.img}
+            <div className="facility_box px-4 px-lg-0 py-5">
+                <Container fluid="lg">
+                    <div className="container-fluid px-0 d-flex column-md-gap-5 flex-wrap flex-lg-nowrap row-gap-5">
+                        {Facility_card.map((item, index) => (
+                            <div key={index} className="shipping_box d-flex col-12 col-sm-6 col-lg border-md-1 border-md-end flex-wrap row-gap-4">
+                                <div className="icon_box col-12 col-xl-2 me-xl-3">
+                                    {item.img}
+                                </div>
+                                <div className="text_box d-flex flex-column col-12 col-xl align-items-center align-items-xl-start">
+                                    <h6 className='text-capitalize mb-0'>{item.title}</h6>
+                                    <span className='mt-1'>{item.description}</span>
+                                </div>
                             </div>
-                            <div className="text_box d-flex flex-column col-12 col-xl align-items-center align-items-xl-start">
-                                <h6 className='text-capitalize mb-0'>{item.title}</h6>
-                                <span className='mt-1'>{item.description}</span>
-                            </div>
-                        </div>
-                    ))}
-                </div>
+                        ))}
+                    </div>
+                </Container>
             </div>
         </div>
     );

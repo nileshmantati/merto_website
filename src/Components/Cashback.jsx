@@ -1,10 +1,11 @@
 import React from 'react';
 import '../Styles/cashback.css';
+import { Container } from 'react-bootstrap';
 
 function Cashback() {
     return (
-        <section className='cash_back_section px-4 mt-4'>
-            <div className="container-lg">
+        <section className='cash_back_section px-4 px-lg-0 mt-4'>
+            <Container fluid="lg">
                 <div className="row">
                     <div className="cash_back d-flex rounded-2 py-3 px-5 flex-wrap flex-md-nowrap row-gap-4 justify-content-center">
                         <div className="d-flex align-items-center col-12 col-sm-7 flex-wrap flex-lg-nowrap gap-4">
@@ -22,7 +23,7 @@ function Cashback() {
                         </div>
                     </div>
                 </div>
-            </div>
+            </Container>
         </section>
     )
 }

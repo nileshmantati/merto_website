@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../Styles/homeslider.css';
-import Button from 'react-bootstrap/Button';
+import { Container, Button } from 'react-bootstrap';
 
 function Homeslider() {
     var settings = {
@@ -19,8 +19,8 @@ function Homeslider() {
         arrows: false
     };
     return (
-        <section className='slider_section'>
-            <div className="container">
+        <section className='slider_section px-4 px-lg-0'>
+            <Container fluid="lg">
                 <Slider {...settings} className='slider ps-0 ps-sm-5 py-4 py-lg-0'>
                     <div className='item position-relative d-flex py-4 px-5 flex-wrap flex-md-nowrap justify-content-md-end flex-lg-row flex-row-reverse'>
                         <div className="img_box col-12 col-md-6 col-lg-8">
@@ -80,7 +80,7 @@ function Homeslider() {
                         </div>
                     </div>
                 </Slider>
-            </div>
+            </Container>
         </section>
     )
 }

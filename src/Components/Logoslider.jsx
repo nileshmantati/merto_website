@@ -71,8 +71,8 @@ function Logoslider() {
     },];
     return (
         <div>
-            <section className='logoslider px-4 px-md-0 py-4'>
-                <Container fluid="md">
+            <section className='logoslider px-4 px-lg-0 py-4'>
+                <Container fluid="lg">
                     <Slider {...settings} className='slider py-5 border-1 border-top'>
                         {logoslider.map((item, index) => (
                             <div key={index} className='item border-0'>

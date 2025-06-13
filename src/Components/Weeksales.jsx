@@ -3,6 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../Styles/week_sales.css';
+import { Container } from 'react-bootstrap';
 
 function Weeksales() {
     var settings = {
@@ -121,83 +122,85 @@ function Weeksales() {
     },
     ];
     return (
-        <section className='weekslider container py-5'>
-            <div className="weekslider_text text-start">
-                <h3>Don't miss this week's sales</h3>
-            </div>
-            <Slider {...settings} className='slider py-4 py-lg-0 mt-4'>
-                {weekSlider.map((item, index) => (
-                    <div key={index} className='item d-flex py-4 flex-wrap p-3 rounded-3 bg-white'>
-                        <a href="#">
-                            <div className="img_box col-12 position-relative">
-                                {item.img}
-                                <div className={`position-absolute top-0 start-0 p-1 
+        <section className='weekslider px-4 px-lg-0 py-5'>
+            <Container fluid="lg">
+                <div className="weekslider_text text-start">
+                    <h3>Don't miss this week's sales</h3>
+                </div>
+                <Slider {...settings} className='slider py-4 py-lg-0 mt-4'>
+                    {weekSlider.map((item, index) => (
+                        <div key={index} className='item d-flex py-4 flex-wrap p-3 rounded-3 bg-white'>
+                            <a href="#">
+                                <div className="img_box col-12 position-relative">
+                                    {item.img}
+                                    <div className={`position-absolute top-0 start-0 p-1 
                             ${item.discount === 'SOLD OUT' ? 'sold' : 'discount'}
                             ` }>{item.discount}</div>
-                                <div className='group_btn position-absolute top-0 end-0 p-1 d-flex flex-column row-gap-1'>
-                                    <a href="#" className='px-2 py-1 rounded-2'>{item.like}</a>
-                                    <a href="#" className='px-2 py-1 rounded-2'>{item.compare}</a>
-                                    <a href="#" className='px-2 py-1 rounded-2'>{item.search}</a>
-                                    <a href="#" className='px-2 py-1 rounded-2'>{item.cart}</a>
+                                    <div className='group_btn position-absolute top-0 end-0 p-1 d-flex flex-column row-gap-1'>
+                                        <a href="#" className='px-2 py-1 rounded-2'>{item.like}</a>
+                                        <a href="#" className='px-2 py-1 rounded-2'>{item.compare}</a>
+                                        <a href="#" className='px-2 py-1 rounded-2'>{item.search}</a>
+                                        <a href="#" className='px-2 py-1 rounded-2'>{item.cart}</a>
+                                    </div>
+                                </div>
+                            </a>
+                            <div className="text_box d-flex flex-column align-items-start pt-3">
+                                <a href="#" className='text-decoration-none'>
+                                    <p className='mb-0 text-start'>{item.description}</p>
+                                </a>
+                                <h6 className='text-capitalize text-start d-flex align-items-center mt-2'>{item.mainprice} <span className='text-decoration-line-through d-flex align-items-center ms-2'>{item.cutprice}</span></h6>
+                                <div className="star_box mt-2">
+                                    {item.indexs === 1 && (
+                                        <div className='d-flex column-gap-1'>
+                                            {item.fullstars}
+                                            {item.fullstars}
+                                            {item.fullstars}
+                                            {item.fullstars}
+                                            {item.halfstars}
+                                        </div>
+                                    )}
+                                    {item.indexs === 2 && (
+                                        <div className='d-flex column-gap-1'>
+                                            {item.fullstars}
+                                            {item.fullstars}
+                                            {item.fullstars}
+                                            {item.fullstars}
+                                            {item.fullstars}
+                                        </div>
+                                    )}
+                                    {item.indexs === 3 && (
+                                        <div className='d-flex column-gap-1'>
+                                            {item.fullstars}
+                                            {item.fullstars}
+                                            {item.fullstars}
+                                            {item.fullstars}
+                                            {item.emptystars}
+                                        </div>
+                                    )}
+                                    {item.indexs === 4 && (
+                                        <div className='d-flex column-gap-1'>
+                                            {item.fullstars}
+                                            {item.fullstars}
+                                            {item.fullstars}
+                                            {item.fullstars}
+                                            {item.emptystars}
+                                        </div>
+                                    )}
+                                    {item.indexs === 5 && (
+                                        <div className='d-flex column-gap-1'>
+                                            {item.emptystars}
+                                            {item.emptystars}
+                                            {item.emptystars}
+                                            {item.emptystars}
+                                            {item.emptystars}
+                                        </div>
+                                    )}
                                 </div>
                             </div>
-                        </a>
-                        <div className="text_box d-flex flex-column align-items-start pt-3">
-                            <a href="#" className='text-decoration-none'>
-                                <p className='mb-0 text-start'>{item.description}</p>
-                            </a>
-                            <h6 className='text-capitalize text-start d-flex align-items-center mt-2'>{item.mainprice} <span className='text-decoration-line-through d-flex align-items-center ms-2'>{item.cutprice}</span></h6>
-                            <div className="star_box mt-2">
-                                {item.indexs === 1 && (
-                                    <div className='d-flex column-gap-1'>
-                                        {item.fullstars}
-                                        {item.fullstars}
-                                        {item.fullstars}
-                                        {item.fullstars}
-                                        {item.halfstars}
-                                    </div>
-                                )}
-                                {item.indexs === 2 && (
-                                    <div className='d-flex column-gap-1'>
-                                        {item.fullstars}
-                                        {item.fullstars}
-                                        {item.fullstars}
-                                        {item.fullstars}
-                                        {item.fullstars}
-                                    </div>
-                                )}
-                                {item.indexs === 3 && (
-                                    <div className='d-flex column-gap-1'>
-                                        {item.fullstars}
-                                        {item.fullstars}
-                                        {item.fullstars}
-                                        {item.fullstars}
-                                        {item.emptystars}
-                                    </div>
-                                )}
-                                {item.indexs === 4 && (
-                                    <div className='d-flex column-gap-1'>
-                                        {item.fullstars}
-                                        {item.fullstars}
-                                        {item.fullstars}
-                                        {item.fullstars}
-                                        {item.emptystars}
-                                    </div>
-                                )}
-                                {item.indexs === 5 && (
-                                    <div className='d-flex column-gap-1'>
-                                        {item.emptystars}
-                                        {item.emptystars}
-                                        {item.emptystars}
-                                        {item.emptystars}
-                                        {item.emptystars}
-                                    </div>
-                                )}
-                            </div>
                         </div>
-                    </div>
-                ))}
-            </Slider>
+                    ))}
+                </Slider>
+            </Container>
         </section >
     )
 }

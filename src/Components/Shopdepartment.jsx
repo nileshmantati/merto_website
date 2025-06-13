@@ -27,8 +27,8 @@ function Shopdepartment() {
     }
     ];
     return (
-        <section className='cash_back_section px-4 px-md-0 py-4 my-5'>
-            <Container fluid="md">
+        <section className='cash_back_section px-4 px-lg-0 py-4 my-5'>
+            <Container fluid="lg">
                 <Row>
                     <div className="heading_text">
                         <h2 className='fs-3 mb-4'>Shop by Department</h2>

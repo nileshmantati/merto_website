@@ -110,75 +110,77 @@ function Cyberweekend() {
     },
     ];
     return (
-        <section className='py-5 container'>
-            <div className="row">
-                <div className="head_box pt-5">
-                    <h2 className='text-capitalize fs-3 fw-bold'>Cyber weekend</h2>
-                    <div className="content mt-5 d-flex justify-content-center flex-wrap column-gap-5 row-gap-3">
-                        <div className="box">
-                            <a href="#" className=' text-decoration-none'>
-                                <h2 className='fs-3'>+10% <br />OFF</h2>
-                            </a>
+        <section className='py-5 px-4 px-lg-0'>
+            <Container fluid="lg">
+                <Row>
+                    <div className="head_box pt-5">
+                        <h2 className='text-capitalize fs-3 fw-bold'>Cyber weekend</h2>
+                        <div className="content mt-5 d-flex justify-content-center flex-wrap column-gap-5 row-gap-3">
+                            <div className="box">
+                                <a href="#" className=' text-decoration-none'>
+                                    <h2 className='fs-3'>+10% <br />OFF</h2>
+                                </a>
+                            </div>
+                            <div className="box">
+                                <a href="#" className=' text-decoration-none'>
+                                    <h2 className='fs-3'>+20% <br />OFF</h2>
+                                </a>
+                            </div>
+                            <div className="box">
+                                <a href="#" className=' text-decoration-none'>
+                                    <h2 className='fs-3'>+30% <br />OFF</h2>
+                                </a>
+                            </div>
+                            <div className="box">
+                                <a href="#" className=' text-decoration-none'>
+                                    <h2 className='fs-3'>+40% <br />OFF</h2>
+                                </a>
+                            </div>
+                            <div className="dark_box">
+                                <a href="#" className=' text-decoration-none'>
+                                    <h2 className='fs-3'>+50% <br />OFF</h2>
+                                </a>
+                            </div>
                         </div>
-                        <div className="box">
-                            <a href="#" className=' text-decoration-none'>
-                                <h2 className='fs-3'>+20% <br />OFF</h2>
-                            </a>
-                        </div>
-                        <div className="box">
-                            <a href="#" className=' text-decoration-none'>
-                                <h2 className='fs-3'>+30% <br />OFF</h2>
-                            </a>
-                        </div>
-                        <div className="box">
-                            <a href="#" className=' text-decoration-none'>
-                                <h2 className='fs-3'>+40% <br />OFF</h2>
-                            </a>
-                        </div>
-                        <div className="dark_box">
-                            <a href="#" className=' text-decoration-none'>
-                                <h2 className='fs-3'>+50% <br />OFF</h2>
-                            </a>
+                        <div className="bg-title">
+                            <h4 className='text-uppercase fw-bold'>sale off</h4>
                         </div>
                     </div>
-                    <div className="bg-title">
-                        <h4 className='text-uppercase fw-bold'>sale off</h4>
-                    </div>
-                </div>
-            </div>
-            <div className="new_arrivals">
-                <h2 className='text-capitalize fs-3 mb-4'>New Arrivals</h2>
-                <div className="Products_box_section d-flex pb-4">
-                    <Row className="g-3 flex-wrap">
-                        {cyberweekend.map((item, index) => (
-                            <Col key={index} xs={12} sm={6} md={4} lg={3}>
-                                <div key={index} className='Products_box d-flex py-2 px-2 flex-wrap p-3 rounded-3 bg-white'>
-                                    <a href="#">
-                                        <div className="img_box col-12 position-relative">
-                                            {item.img}
-                                            {item.isHot && <span className="badge hot">HOT</span>}
-                                            {item.discount && <span className="badge discount">{item.discount}</span>}
-                                            <div className='group_btn position-absolute top-0 end-0 p-1 d-flex flex-column row-gap-1'>
-                                                <a href="#" className='px-2 py-1 rounded-2'>{item.like}</a>
-                                                <a href="#" className='px-2 py-1 rounded-2'>{item.compare}</a>
-                                                <a href="#" className='px-2 py-1 rounded-2'>{item.search}</a>
-                                                <a href="#" className='px-2 py-1 rounded-2'>{item.cart}</a>
+                </Row>
+                <div className="new_arrivals">
+                    <h2 className='text-capitalize fs-3 mb-4'>New Arrivals</h2>
+                    <div className="Products_box_section d-flex pb-4">
+                        <Row className="g-3 flex-wrap">
+                            {cyberweekend.map((item, index) => (
+                                <Col key={index} xs={12} sm={6} md={4} lg={3}>
+                                    <div key={index} className='Products_box d-flex py-2 px-2 flex-wrap p-3 rounded-3 bg-white'>
+                                        <a href="#">
+                                            <div className="img_box col-12 position-relative">
+                                                {item.img}
+                                                {item.isHot && <span className="badge hot">HOT</span>}
+                                                {item.discount && <span className="badge discount">{item.discount}</span>}
+                                                <div className='group_btn position-absolute top-0 end-0 p-1 d-flex flex-column row-gap-1'>
+                                                    <a href="#" className='px-2 py-1 rounded-2'>{item.like}</a>
+                                                    <a href="#" className='px-2 py-1 rounded-2'>{item.compare}</a>
+                                                    <a href="#" className='px-2 py-1 rounded-2'>{item.search}</a>
+                                                    <a href="#" className='px-2 py-1 rounded-2'>{item.cart}</a>
+                                                </div>
                                             </div>
-                                        </div>
-                                    </a>
-                                    <div className="text_box d-flex flex-column align-items-start pt-3">
-                                        <a href="#" className='text-decoration-none'>
-                                            <p className='mb-0 text-start'>{item.description}</p>
                                         </a>
-                                        <h6 className='text-capitalize text-start d-flex align-items-center mt-2'>{item.mainprice} <span className='text-decoration-line-through d-flex align-items-center ms-2'>{item.cutprice}</span></h6>
+                                        <div className="text_box d-flex flex-column align-items-start pt-3">
+                                            <a href="#" className='text-decoration-none'>
+                                                <p className='mb-0 text-start'>{item.description}</p>
+                                            </a>
+                                            <h6 className='text-capitalize text-start d-flex align-items-center mt-2'>{item.mainprice} <span className='text-decoration-line-through d-flex align-items-center ms-2'>{item.cutprice}</span></h6>
+                                        </div>
                                     </div>
-                                </div>
-                            </Col>
-                        ))}
-                    </Row>
+                                </Col>
+                            ))}
+                        </Row>
+                    </div>
+                    <a href="#" className='all_products'>See All Products</a>
                 </div>
-                <a href="#" className='all_products'>See All Products</a>
-            </div>
+            </Container>
         </section>
     )
 }
