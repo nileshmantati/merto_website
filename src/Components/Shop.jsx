@@ -7,15 +7,6 @@ import { NavLink } from 'react-router-dom';
 import { Container, Row, Col, Card, Form, Button } from "react-bootstrap";
 
 function Shop() {
-    const products = [
-        { id: 1, name: "Milo Brass And Black Metal Lamp", price: "$82", img: "https://via.placeholder.com/150", tag: "HOT" },
-        { id: 2, name: "Light Luxury Urban Leather Chair", price: "$179", img: "https://via.placeholder.com/150" },
-        { id: 3, name: "Howard Chandelier Gunmetal", price: "$745", img: "https://via.placeholder.com/150" },
-        { id: 4, name: "14-inch Fasion Simplicity Wall Clock", price: "$50", discount: "$75", img: "https://via.placeholder.com/150", discountRate: 33 },
-        { id: 5, name: "Drawer Record Storage Cabinet", price: "$178", img: "https://via.placeholder.com/150" },
-        { id: 6, name: "Studio Designs Home, Heather Chair", price: "$239", discount: "$299", discountRate: 20, img: "https://via.placeholder.com/150" }
-    ];
-
     // Filter options
     const colors = [
         { color: '#232228', colorname: "Black", count: 6 },
@@ -25,7 +16,7 @@ function Shop() {
         { color: '#292E4E', colorname: "Navy", count: 2 },
         { color: '#FF9E20', colorname: "Orange", count: 2 },
         { color: '#FFD1DC', colorname: "Pink", count: 1 },
-        { color: '#ffffff', colorname: "White", count: 5 },
+        { color: '##f1f1f1', colorname: "White", count: 5 },
         { color: '#F2E576', colorname: "Yellow", count: 2 }
     ];
 
@@ -38,6 +29,53 @@ function Shop() {
         { name: "Basett", count: 5 },
         { name: "Cerave", count: 2 },
         { name: "Clinique", count: 4 }
+    ]
+    // Prices
+    const prices = [
+        { range: '0 - $100' },
+        { range: '$100 - $200' },
+        { range: '$200 - $500' },
+        { range: '$500' },
+    ]
+    // Rating
+    const rating = [
+        {
+            stars: [<i className="fa-solid fa-star fa-sm" />,
+            <i className="fa-solid fa-star fa-sm" />,
+            <i className="fa-solid fa-star fa-sm" />,
+            <i className="fa-solid fa-star fa-sm" />,
+            <i className="fa-solid fa-star fa-sm" />
+            ],
+            count: "13",
+        },
+        {
+            stars: [<i className="fa-solid fa-star fa-sm" />,
+            <i className="fa-solid fa-star fa-sm" />,
+            <i className="fa-solid fa-star fa-sm" />,
+            <i className="fa-solid fa-star fa-sm" />,
+            <i className="fa-regular fa-star fa-sm" />
+
+            ],
+            count: "11",
+        },
+        {
+            stars: [<i className="fa-solid fa-star fa-sm" />,
+            <i className="fa-solid fa-star fa-sm" />,
+            <i className="fa-solid fa-star fa-sm" />,
+            <i className="fa-regular fa-star fa-sm" />,
+            <i className="fa-regular fa-star fa-sm" />
+            ],
+            count: "1",
+        },
+        {
+            stars: [<i className="fa-solid fa-star fa-sm" />,
+            <i className="fa-solid fa-star fa-sm" />,
+            <i className="fa-regular fa-star fa-sm" />,
+            <i className="fa-regular fa-star fa-sm" />,
+            <i className="fa-regular fa-star fa-sm" />
+            ],
+            count: "1",
+        },
     ]
     var settings = {
         dots: false,
@@ -135,6 +173,300 @@ function Shop() {
         img: <img src={require('../img/cat-35.jpg')} alt='Not Found' />,
         title: "Wall Decor"
     },];
+    const products = [{
+        indexs: 1,
+        img: <img src={require('../img/furniture-7-700x700 (1).jpg')} alt='Not Found' />,
+        description: "Milo Brass And Black Metal Lamp Ø18cm x 30cm",
+        mainprice: "$82",
+        isHot: "HOT",
+        like: <i className="fa-regular fa-heart fa-sm" />,
+        compare: <i className="fa-solid fa-down-left-and-up-right-to-center fa-sm" />,
+        search: <i className="fa-solid fa-magnifying-glass fa-sm" />,
+        cart: <i className="fa-solid fa-cart-shopping fa-sm" />
+    },
+    {
+        indexs: 2,
+        img: <img src={require('../img/furniture-14-700x700.jpg')} alt='Not Found' />,
+        description: "Light Luxury Urban Leather Lounge Chair Home Living",
+        mainprice: "$179",
+        like: <i className="fa-regular fa-heart fa-sm" />,
+        compare: <i className="fa-solid fa-down-left-and-up-right-to-center fa-sm" />,
+        search: <i className="fa-solid fa-magnifying-glass fa-sm" />,
+        cart: <i className="fa-solid fa-cart-shopping fa-sm" />
+    },
+    {
+        indexs: 3,
+        img: <img src={require('../img/furniture-17-700x700.jpg')} alt='Not Found' />,
+        description: "Howard Chandelier Six Long Arms – Gunmetal",
+        mainprice: "$745",
+        like: <i className="fa-regular fa-heart fa-sm" />,
+        compare: <i className="fa-solid fa-down-left-and-up-right-to-center fa-sm" />,
+        search: <i className="fa-solid fa-magnifying-glass fa-sm" />,
+        cart: <i className="fa-solid fa-cart-shopping fa-sm" />
+    },
+    {
+        indexs: 4,
+        img: <img src={require('../img/furniture-6-700x700.jpg')} alt='Not Found' />,
+        description: "14-inch Fasion Simplicity Quality Wall Clock, Home..",
+        mainprice: "$50",
+        cutprice: "$75",
+        discount: "-33%",
+        like: <i className="fa-regular fa-heart fa-sm" />,
+        compare: <i className="fa-solid fa-down-left-and-up-right-to-center fa-sm" />,
+        search: <i className="fa-solid fa-magnifying-glass fa-sm" />,
+        cart: <i className="fa-solid fa-cart-shopping fa-sm" />
+    },
+    {
+        indexs: 5,
+        img: <img src={require('../img/furniture-16-700x700.jpg')} alt='Not Found' />,
+        description: "Drawer Record Storage Cabinet Turntable Stand",
+        mainprice: "$108",
+        like: <i className="fa-regular fa-heart fa-sm" />,
+        compare: <i className="fa-solid fa-down-left-and-up-right-to-center fa-sm" />,
+        search: <i className="fa-solid fa-magnifying-glass fa-sm" />,
+        cart: <i className="fa-solid fa-cart-shopping fa-sm" />
+    },
+    {
+        indexs: 6,
+        img: <img src={require('../img/furniture-4-500x500.jpg')} alt='Not Found' />,
+        description: "Solid Wood Rattan Tv Unit – Natural Finish",
+        mainprice: "$178",
+        like: <i className="fa-regular fa-heart fa-sm" />,
+        compare: <i className="fa-solid fa-down-left-and-up-right-to-center fa-sm" />,
+        search: <i className="fa-solid fa-magnifying-glass fa-sm" />,
+        cart: <i className="fa-solid fa-cart-shopping fa-sm" />
+    },
+    {
+        indexs: 7,
+        img: <img src={require('../img/furniture-10-700x700.jpg')} alt='Not Found' />,
+        description: "Stickley Furniture Mission Collection Oak Tall..",
+        mainprice: "$293",
+        like: <i className="fa-regular fa-heart fa-sm" />,
+        compare: <i className="fa-solid fa-down-left-and-up-right-to-center fa-sm" />,
+        search: <i className="fa-solid fa-magnifying-glass fa-sm" />,
+        cart: <i className="fa-solid fa-cart-shopping fa-sm" />
+    },
+    {
+        indexs: 8,
+        img: <img src={require('../img/furniture-3-500x500.jpg')} alt='Not Found' />,
+        description: "Studio Designs Home, Heather Studio Designs..",
+        mainprice: "$192",
+        cutprice: "$239",
+        discount: "-20%",
+        like: <i className="fa-regular fa-heart fa-sm" />,
+        compare: <i className="fa-solid fa-down-left-and-up-right-to-center fa-sm" />,
+        search: <i className="fa-solid fa-magnifying-glass fa-sm" />,
+        cart: <i className="fa-solid fa-cart-shopping fa-sm" />
+    },
+    {
+        indexs: 9,
+        img: <img src={require('../img/furniture-8-700x700.jpg')} alt='Not Found' />,
+        description: "Geo Carved Almond Brown Kids Performance..",
+        mainprice: "$449",
+        like: <i className="fa-regular fa-heart fa-sm" />,
+        compare: <i className="fa-solid fa-down-left-and-up-right-to-center fa-sm" />,
+        search: <i className="fa-solid fa-magnifying-glass fa-sm" />,
+        cart: <i className="fa-solid fa-cart-shopping fa-sm" />
+    },
+    {
+        indexs: 10,
+        img: <img src={require('../img/furniture-15-700x700.jpg')} alt='Not Found' />,
+        description: "Modern Large Accent Lounge Chair, Leisure..",
+        mainprice: "$143",
+        like: <i className="fa-regular fa-heart fa-sm" />,
+        compare: <i className="fa-solid fa-down-left-and-up-right-to-center fa-sm" />,
+        search: <i className="fa-solid fa-magnifying-glass fa-sm" />,
+        cart: <i className="fa-solid fa-cart-shopping fa-sm" />
+    },
+    {
+        indexs: 11,
+        img: <img src={require('../img/furniture-18-300x300.jpg')} alt='Not Found' />,
+        description: "Beckham 4L Chandelier White Linen Fabric shades",
+        mainprice: "$493",
+        like: <i className="fa-regular fa-heart fa-sm" />,
+        compare: <i className="fa-solid fa-down-left-and-up-right-to-center fa-sm" />,
+        search: <i className="fa-solid fa-magnifying-glass fa-sm" />,
+        cart: <i className="fa-solid fa-cart-shopping fa-sm" />
+    },
+    {
+        indexs: 12,
+        img: <img src={require('../img/furniture-7-700x700 (1).jpg')} alt='Not Found' />,
+        description: "Mid Century Modern Round Dining Table in Oak",
+        mainprice: "$179",
+        like: <i className="fa-regular fa-heart fa-sm" />,
+        compare: <i className="fa-solid fa-down-left-and-up-right-to-center fa-sm" />,
+        search: <i className="fa-solid fa-magnifying-glass fa-sm" />,
+        cart: <i className="fa-solid fa-cart-shopping fa-sm" />
+    },
+    {
+        indexs: 13,
+        img: <img src={require('../img/furniture-17-700x700.jpg')} alt='Not Found' />,
+        description: "Howard Chandelier Six Long Arms – Gunmetal",
+        mainprice: "$745",
+        like: <i className="fa-regular fa-heart fa-sm" />,
+        compare: <i className="fa-solid fa-down-left-and-up-right-to-center fa-sm" />,
+        search: <i className="fa-solid fa-magnifying-glass fa-sm" />,
+        cart: <i className="fa-solid fa-cart-shopping fa-sm" />
+    },
+    {
+        indexs: 14,
+        img: <img src={require('../img/furniture-6-700x700.jpg')} alt='Not Found' />,
+        description: "14-inch Fasion Simplicity Quality Wall Clock, Home..",
+        mainprice: "$50",
+        cutprice: "$75",
+        discount: "-33%",
+        like: <i className="fa-regular fa-heart fa-sm" />,
+        compare: <i className="fa-solid fa-down-left-and-up-right-to-center fa-sm" />,
+        search: <i className="fa-solid fa-magnifying-glass fa-sm" />,
+        cart: <i className="fa-solid fa-cart-shopping fa-sm" />
+    },
+    {
+        indexs: 15,
+        img: <img src={require('../img/furniture-16-700x700.jpg')} alt='Not Found' />,
+        description: "Drawer Record Storage Cabinet Turntable Stand",
+        mainprice: "$108",
+        like: <i className="fa-regular fa-heart fa-sm" />,
+        compare: <i className="fa-solid fa-down-left-and-up-right-to-center fa-sm" />,
+        search: <i className="fa-solid fa-magnifying-glass fa-sm" />,
+        cart: <i className="fa-solid fa-cart-shopping fa-sm" />
+    },
+    {
+        indexs: 16,
+        img: <img src={require('../img/furniture-4-500x500.jpg')} alt='Not Found' />,
+        description: "Solid Wood Rattan Tv Unit – Natural Finish",
+        mainprice: "$178",
+        like: <i className="fa-regular fa-heart fa-sm" />,
+        compare: <i className="fa-solid fa-down-left-and-up-right-to-center fa-sm" />,
+        search: <i className="fa-solid fa-magnifying-glass fa-sm" />,
+        cart: <i className="fa-solid fa-cart-shopping fa-sm" />
+    },
+    {
+        indexs: 17,
+        img: <img src={require('../img/furniture-10-700x700.jpg')} alt='Not Found' />,
+        description: "Stickley Furniture Mission Collection Oak Tall..",
+        mainprice: "$293",
+        like: <i className="fa-regular fa-heart fa-sm" />,
+        compare: <i className="fa-solid fa-down-left-and-up-right-to-center fa-sm" />,
+        search: <i className="fa-solid fa-magnifying-glass fa-sm" />,
+        cart: <i className="fa-solid fa-cart-shopping fa-sm" />
+    },
+    {
+        indexs: 18,
+        img: <img src={require('../img/furniture-3-500x500.jpg')} alt='Not Found' />,
+        description: "Studio Designs Home, Heather Studio Designs..",
+        mainprice: "$192",
+        cutprice: "$239",
+        discount: "-20%",
+        like: <i className="fa-regular fa-heart fa-sm" />,
+        compare: <i className="fa-solid fa-down-left-and-up-right-to-center fa-sm" />,
+        search: <i className="fa-solid fa-magnifying-glass fa-sm" />,
+        cart: <i className="fa-solid fa-cart-shopping fa-sm" />
+    },
+    {
+        indexs: 19,
+        img: <img src={require('../img/furniture-8-700x700.jpg')} alt='Not Found' />,
+        description: "Geo Carved Almond Brown Kids Performance..",
+        mainprice: "$449",
+        like: <i className="fa-regular fa-heart fa-sm" />,
+        compare: <i className="fa-solid fa-down-left-and-up-right-to-center fa-sm" />,
+        search: <i className="fa-solid fa-magnifying-glass fa-sm" />,
+        cart: <i className="fa-solid fa-cart-shopping fa-sm" />
+    },
+    {
+        indexs: 20,
+        img: <img src={require('../img/furniture-15-700x700.jpg')} alt='Not Found' />,
+        description: "Modern Large Accent Lounge Chair, Leisure..",
+        mainprice: "$143",
+        like: <i className="fa-regular fa-heart fa-sm" />,
+        compare: <i className="fa-solid fa-down-left-and-up-right-to-center fa-sm" />,
+        search: <i className="fa-solid fa-magnifying-glass fa-sm" />,
+        cart: <i className="fa-solid fa-cart-shopping fa-sm" />
+    },
+    {
+        indexs: 21,
+        img: <img src={require('../img/furniture-4-500x500.jpg')} alt='Not Found' />,
+        description: "Solid Wood Rattan Tv Unit – Natural Finish",
+        mainprice: "$178",
+        like: <i className="fa-regular fa-heart fa-sm" />,
+        compare: <i className="fa-solid fa-down-left-and-up-right-to-center fa-sm" />,
+        search: <i className="fa-solid fa-magnifying-glass fa-sm" />,
+        cart: <i className="fa-solid fa-cart-shopping fa-sm" />
+    },
+    {
+        indexs: 22,
+        img: <img src={require('../img/furniture-10-700x700.jpg')} alt='Not Found' />,
+        description: "Stickley Furniture Mission Collection Oak Tall..",
+        mainprice: "$293",
+        like: <i className="fa-regular fa-heart fa-sm" />,
+        compare: <i className="fa-solid fa-down-left-and-up-right-to-center fa-sm" />,
+        search: <i className="fa-solid fa-magnifying-glass fa-sm" />,
+        cart: <i className="fa-solid fa-cart-shopping fa-sm" />
+    },
+    {
+        indexs: 23,
+        img: <img src={require('../img/furniture-3-500x500.jpg')} alt='Not Found' />,
+        description: "Studio Designs Home, Heather Studio Designs..",
+        mainprice: "$192",
+        cutprice: "$239",
+        discount: "-20%",
+        like: <i className="fa-regular fa-heart fa-sm" />,
+        compare: <i className="fa-solid fa-down-left-and-up-right-to-center fa-sm" />,
+        search: <i className="fa-solid fa-magnifying-glass fa-sm" />,
+        cart: <i className="fa-solid fa-cart-shopping fa-sm" />
+    },
+    {
+        indexs: 24,
+        img: <img src={require('../img/furniture-8-700x700.jpg')} alt='Not Found' />,
+        description: "Geo Carved Almond Brown Kids Performance..",
+        mainprice: "$449",
+        like: <i className="fa-regular fa-heart fa-sm" />,
+        compare: <i className="fa-solid fa-down-left-and-up-right-to-center fa-sm" />,
+        search: <i className="fa-solid fa-magnifying-glass fa-sm" />,
+        cart: <i className="fa-solid fa-cart-shopping fa-sm" />
+    },
+    {
+        indexs: 25,
+        img: <img src={require('../img/furniture-15-700x700.jpg')} alt='Not Found' />,
+        description: "Modern Large Accent Lounge Chair, Leisure..",
+        mainprice: "$143",
+        like: <i className="fa-regular fa-heart fa-sm" />,
+        compare: <i className="fa-solid fa-down-left-and-up-right-to-center fa-sm" />,
+        search: <i className="fa-solid fa-magnifying-glass fa-sm" />,
+        cart: <i className="fa-solid fa-cart-shopping fa-sm" />
+    },
+    {
+        indexs: 26,
+        img: <img src={require('../img/furniture-3-500x500.jpg')} alt='Not Found' />,
+        description: "Studio Designs Home, Heather Studio Designs..",
+        mainprice: "$192",
+        cutprice: "$239",
+        discount: "-20%",
+        like: <i className="fa-regular fa-heart fa-sm" />,
+        compare: <i className="fa-solid fa-down-left-and-up-right-to-center fa-sm" />,
+        search: <i className="fa-solid fa-magnifying-glass fa-sm" />,
+        cart: <i className="fa-solid fa-cart-shopping fa-sm" />
+    },
+    {
+        indexs: 27,
+        img: <img src={require('../img/furniture-8-700x700.jpg')} alt='Not Found' />,
+        description: "Geo Carved Almond Brown Kids Performance..",
+        mainprice: "$449",
+        like: <i className="fa-regular fa-heart fa-sm" />,
+        compare: <i className="fa-solid fa-down-left-and-up-right-to-center fa-sm" />,
+        search: <i className="fa-solid fa-magnifying-glass fa-sm" />,
+        cart: <i className="fa-solid fa-cart-shopping fa-sm" />
+    },
+    {
+        indexs: 28,
+        img: <img src={require('../img/furniture-15-700x700.jpg')} alt='Not Found' />,
+        description: "Modern Large Accent Lounge Chair, Leisure..",
+        mainprice: "$143",
+        like: <i className="fa-regular fa-heart fa-sm" />,
+        compare: <i className="fa-solid fa-down-left-and-up-right-to-center fa-sm" />,
+        search: <i className="fa-solid fa-magnifying-glass fa-sm" />,
+        cart: <i className="fa-solid fa-cart-shopping fa-sm" />
+    },
+    ];
     return (
         <div>
             <div className="main_heading px-4 px-lg-0 pt-3">
@@ -168,11 +500,11 @@ function Shop() {
                     </Slider>
                 </Container>
             </div>
-            <div className="main_content">
-                <Container className="my-4">
+            <div className="main pb-5 px-4 px-lg-0">
+                <Container fluid="lg" className="my-4" >
                     <Row>
                         {/* Filters */}
-                        <Col md={3}>
+                        <Col md={3} className='d-none d-md-flex flex-column'>
                             <h5 className='text-start mb-4 fs-5'>Colors</h5>
                             <ul className='color_filter mb-0 ps-0 d-flex flex-column row-gap-2'>
                                 {colors.map((item, idx) => (
@@ -183,7 +515,7 @@ function Shop() {
                                 ))}
                             </ul>
                             <h5 className='text-start mt-5 mb-4 fs-5'>Brands</h5>
-                            <ul className='brand_filter mb-0 ps-0 d-flex flex-column row-gap-2'>
+                            <ul className='checkbox_filter mb-0 ps-0 d-flex flex-column row-gap-2'>
                                 {brands.map((item, idx) => (
                                     <li key={idx}>
                                         <input type="checkbox" />
@@ -192,31 +524,79 @@ function Shop() {
                                         </label></li>
                                 ))}
                             </ul>
+                            <h5 className='text-start mt-5 mb-4 fs-5'>Price</h5>
+                            <ul className='checkbox_filter mb-0 ps-0 d-flex flex-column row-gap-2'>
+                                {prices.map((item, idx) => (
+                                    <li key={idx}>
+                                        <input type="checkbox" />
+                                        <label htmlFor="" className='col ms-2 d-flex justify-content-start'>
+                                            {item.range}
+                                        </label></li>
+                                ))}
+                            </ul>
+                            <h5 className='text-start mt-5 mb-4 fs-5'>Customer Rating</h5>
+                            <ul className='checkbox_filter mb-0 ps-0 d-flex flex-column row-gap-2'>
+                                {rating.map((item, idx) => (
+                                    <li key={idx}>
+                                        <input type="checkbox" />
+                                        <div className="rating-star col ms-2 text-start">
+                                            {item.stars}
+                                        </div>
+                                        <span className='count'>({item.count})</span>
+                                    </li>
+                                ))}
+                            </ul>
                         </Col>
 
                         {/* Product grid */}
                         <Col md={9}>
                             <Row>
-                                {products.map((product) => (
-                                    <Col key={product.id} sm={6} md={4} className="mb-4">
-                                        <Card>
-                                            {product.tag && <span className="badge bg-warning position-absolute" style={{ top: '10px', left: '10px' }}>{product.tag}</span>}
-                                            {product.discountRate && <span className="badge bg-danger position-absolute" style={{ top: '10px', right: '10px' }}>-{product.discountRate}%</span>}
-                                            <Card.Img variant="top" src={product.img} alt={product.name} />
-                                            <Card.Body>
-                                                <Card.Title>{product.name}</Card.Title>
-                                                <Card.Text>
-                                                    {product.discount ? <><s>{product.discount}</s> {product.price}</> : product.price}
-                                                </Card.Text>
-                                            </Card.Body>
-                                        </Card>
+                                {products.map((item, index) => (
+                                    <Col key={item.id} xs={6} sm={4} md={3} className="mb-4">
+                                        <div key={index} className='Products_box d-flex py-2 px-2 flex-wrap p-3 rounded-3 bg-white'>
+                                            <a href="#">
+                                                <div className="img_box col-12 position-relative">
+                                                    {item.img}
+                                                    {item.isHot && <span className="badge hot">HOT</span>}
+                                                    {item.discount && <span className="badge discount">{item.discount}</span>}
+                                                    <div className='group_btn position-absolute top-0 end-0 p-1 d-flex flex-column row-gap-1'>
+                                                        <a href="#" className='px-2 py-1 rounded-2'>{item.like}</a>
+                                                        <a href="#" className='px-2 py-1 rounded-2'>{item.compare}</a>
+                                                        <a href="#" className='px-2 py-1 rounded-2'>{item.search}</a>
+                                                        <a href="#" className='px-2 py-1 rounded-2'>{item.cart}</a>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                            <div className="text_box d-flex flex-column align-items-start pt-3">
+                                                <a href="#" className='text-decoration-none'>
+                                                    <p className='mb-0 text-start'>{item.description}</p>
+                                                </a>
+                                                <h6 className='text-capitalize text-start d-flex align-items-center mt-2'>{item.mainprice} <span
+                                                    className='text-decoration-line-through d-flex align-items-center ms-2'>{item.cutprice}</span></h6>
+                                            </div>
+                                        </div>
                                     </Col>
                                 ))}
+                            </Row>
+                            <Row>
+                                <div className="pagination mt-3 d-flex justify-content-center">
+                                    <ul className='page_numbers d-flex ps-0 mb-0 column-gap-2'>
+                                        <li className='px-3 py-2 active border-1 border rounded-3'>
+                                            <span>1</span>
+                                        </li>
+                                        <li className='px-3 py-2 border-1 border rounded-3'>
+                                            <span>2</span>
+                                        </li>
+                                        <li className='px-4 py-2 border-1 border rounded-3'>
+                                            <span>Next</span>
+                                        </li>
+                                    </ul>
+                                </div>
                             </Row>
                         </Col>
                     </Row>
                 </Container>
-            </div>
+            </div >
         </div >
     )
 }

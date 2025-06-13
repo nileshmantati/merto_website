@@ -177,7 +177,7 @@
     padding-top: .6rem;
     padding-bottom: .6rem;
     background-color: #A3381C;
-    border-radius: 7px 7px 0px 0px;
+    border-radius: 7px 7px 7px 7px;
     transition: all ease-in-out 1s;
 }
 

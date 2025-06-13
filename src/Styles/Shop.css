@@ -1,5 +1,7 @@
-.heading_text {
+.heading_text h3 {
     font-family: "Poppins";
+    font-weight: 600;
+    font-size: 1.3rem;
 }
 
 .heading_link a {
@@ -10,6 +12,7 @@
 
 .heading_link {
     font-family: "Poppins";
+    font-size: .85rem;
 }
 
 .heading_link a:hover {
@@ -18,11 +21,6 @@
 
 .heading_link_arrow {
     color: rgb(187, 187, 187);
-}
-
-.heading_text h2 {
-    font-family: "Poppins";
-    font-weight: 600;
 }
 
 .categories_slider a {
@@ -86,7 +84,6 @@
 .color_filter .color {
     border-radius: 3px;
     overflow: hidden;
-    border: 1px solid rgb(199, 199, 199);
 }
 
 .color_filter .count {
@@ -98,7 +95,7 @@
     color: #A3381C;
 }
 
-.brand_filter li {
+.checkbox_filter li {
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -106,19 +103,148 @@
     transition: all ease-in-out .3s;
 }
 
-.brand_filter input {
+.checkbox_filter input {
     width: 15px;
 }
 
-.brand_filter label {
+.checkbox_filter label {
     font-size: .9rem;
     font-family: "Poppins";
 }
 
-.brand_filter .count {
+.checkbox_filter .count {
     color: gray;
 }
 
-.brand_filter li:hover label {
+.checkbox_filter li:hover label {
     color: #A3381C;
+}
+
+.checkbox_filter li:hover .count {
+    color: #A3381C;
+}
+
+.Products_box {
+    font-family: "Poppins";
+    border: 1px solid rgb(222, 222, 222);
+}
+
+.img_box img {
+    width: 100%;
+    height: 100%;
+}
+
+.Products_box .text_box {
+    font-family: "Poppins";
+}
+
+.Products_box .text_box h6 {
+    font-weight: 500;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.Products_box .text_box a {
+    color: black !important;
+    font-size: .9rem;
+    transition: all ease-in-out .3s;
+}
+
+.Products_box .text_box p {
+    font-size: .8rem;
+}
+
+.Products_box .text_box span {
+    color: rgb(174, 174, 174);
+    font-weight: 400;
+    font-size: .8rem;
+}
+
+.group_btn {
+    display: flex;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.group_btn a {
+    color: black;
+    background-color: rgb(238, 238, 238);
+    transition: all ease-in-out .4s;
+}
+
+.group_btn a:hover {
+    color: rgb(238, 238, 238);
+    background-color: black;
+}
+
+.Products_box:hover .group_btn {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.Products_box:hover {
+    box-shadow: 0px 0px 6px rgb(192, 192, 192);
+}
+
+.Products_box_section .text_box a:hover {
+    color: #A3381C;
+}
+
+.badge.hot {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 4px;
+    font-size: .8rem;
+    background: #F05025;
+    color: white;
+    padding: 5px 6px;
+    font-size: 12px;
+}
+
+.badge.discount {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #a93f23;
+    color: white;
+    padding: 5px 6px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.new_arrivals a {
+    text-decoration: none;
+    color: black;
+    position: relative;
+    overflow: hidden;
+    transition: all ease-in-out .5s;
+}
+
+.new_arrivals .all_products::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 0;
+    display: block;
+    border-bottom: 1px solid;
+    transition: all ease-in-out .5s;
+}
+
+.new_arrivals .all_products:hover::before {
+    width: 100%;
+}
+
+.page_numbers li {
+    list-style: none;
+}
+
+.page_numbers li.active {
+    border-color: black !important;
+}
+
+.page_numbers li:hover {
+    border-color: black !important;
 }
