@@ -5,7 +5,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Routes, Route } from "react-router";
 import Homepage from './Homepage';
 import Shoppage from './Shoppage';
-import Product from './Product';
+import Productpage from './Productpage';
+import Blogpage from './Blogpage';
+import Aboutuspage from './Aboutuspage';
 
 function App() {
   return (
@@ -13,7 +15,9 @@ function App() {
       <Routes >
         <Route path="/" element={<Homepage />} />
         <Route path="/shoppage" element={<Shoppage />} />
-        <Route path="/product" element={<Product />} />
+        <Route path="/productpage" element={<Productpage />} />
+        <Route path="/blogpage" element={<Blogpage />} />
+        <Route path="/aboutuspage" element={<Aboutuspage />} />
       </Routes>
     </div>
   );

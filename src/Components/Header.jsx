@@ -108,18 +108,14 @@ function Header() {
                                                 <i className="fa-solid fa-plus ms-1 arrow-icon" /></NavLink>
                                         </li>
                                         <li className="nav-item py-2 px-3">
-                                            <NavLink to="/product" className="fw-medium">Products
+                                            <NavLink to="/productpage" className="fw-medium">Products
                                                 <i className="fa-solid fa-plus ms-1 arrow-icon" /></NavLink>
                                         </li>
                                         <li className="nav-item py-2 px-3">
-                                            <NavLink to="/" className="fw-medium">Pages
-                                                <i className="fa-solid fa-plus ms-1 arrow-icon" /></NavLink>
+                                            <NavLink to="/blogpage" className="fw-medium">Blog</NavLink>
                                         </li>
                                         <li className="nav-item py-2 px-3">
-                                            <NavLink to="/" className="fw-medium">Blog</NavLink>
-                                        </li>
-                                        <li className="nav-item py-2 px-3">
-                                            <NavLink to="/" className="fw-medium">Abous us</NavLink>
+                                            <NavLink to="/aboutuspage" className="fw-medium">Abous us</NavLink>
                                         </li>
                                         <li className="nav-item py-2 px-3">
                                             <NavLink to="/" className="fw-medium"><span className='text_gray'>Recently viewed</span>
@@ -214,18 +210,14 @@ function Header() {
                                             <i className="fa-solid fa-chevron-down ms-2 fa-sm arrow_icon" /></NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/product" className="text-decoration-none text-capitalize">products
+                                        <NavLink to="/productpage" className="text-decoration-none text-capitalize">products
                                             <i className="fa-solid fa-chevron-down ms-2 fa-sm arrow_icon" /></NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/" className="text-decoration-none text-capitalize">pages
-                                            <i className="fa-solid fa-chevron-down ms-2 fa-sm arrow_icon" /></NavLink>
+                                        <NavLink to="/blogpage" className="text-decoration-none text-capitalize">blog</NavLink>
                                     </li>
                                     <li>
-                                        <NavLink to="/" className="text-decoration-none text-capitalize">blog</NavLink>
-                                    </li>
-                                    <li>
-                                        <NavLink to="/" className="text-decoration-none text-capitalize">about us</NavLink>
+                                        <NavLink to="/aboutuspage" className="text-decoration-none text-capitalize">about us</NavLink>
                                     </li>
                                     <li className='ms-auto'>
                                         <NavLink to="/" className="text-decoration-none text-capitalize">recently viewed<i className="fa-solid fa-chevron-down ms-2 fa-sm arrow_icon" /></NavLink>

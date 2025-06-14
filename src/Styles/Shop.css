@@ -13,6 +13,7 @@
 .heading_link {
     font-family: "Poppins";
     font-size: .85rem;
+    color: gray;
 }
 
 .heading_link a:hover {
@@ -151,7 +152,7 @@
 }
 
 .Products_box .text_box p {
-    font-size: .8rem;
+    font-size: .9rem;
 }
 
 .Products_box .text_box span {

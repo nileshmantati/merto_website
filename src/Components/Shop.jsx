@@ -480,7 +480,7 @@ function Shop() {
                     </div>
                 </Container>
             </div>
-            <div className="categories_list px-4 px-lg-0 pt-2">
+            <div className="categories_list px-4 px-lg-0 pt-0 pt-sm-2">
                 <Container fluid="lg">
                     <Slider {...settings} className='categories_slider pb-4 mt-4 border-1 border-bottom'>
                         {categoriesslider.map((item, index) => (
@@ -551,7 +551,7 @@ function Shop() {
                         <Col md={9}>
                             <Row>
                                 {products.map((item, index) => (
-                                    <Col key={item.id} xs={6} sm={4} md={3} className="mb-4">
+                                    <Col key={item.id} xs={12} sm={4} md={3} className="mb-4">
                                         <div key={index} className='Products_box d-flex py-2 px-2 flex-wrap p-3 rounded-3 bg-white'>
                                             <a href="#">
                                                 <div className="img_box col-12 position-relative">
