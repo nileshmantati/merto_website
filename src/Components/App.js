@@ -12,7 +12,7 @@ import Aboutuspage from './Aboutuspage';
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename="/merto_website">
         <Routes >
           <Route path="/" element={<Homepage />} />
           <Route path="/shoppage" element={<Shoppage />} />
