@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/merto_website/static/css/main.47cd847d.css",
-    "main.js": "/merto_website/static/js/main.3917e2ca.js",
+    "main.js": "/merto_website/static/js/main.17693c43.js",
     "static/js/453.53cb52b5.chunk.js": "/merto_website/static/js/453.53cb52b5.chunk.js",
     "static/media/blog-7.png": "/merto_website/static/media/blog-7.09299e700b76bb2dee07.png",
     "static/media/fa-solid-900.ttf": "/merto_website/static/media/fa-solid-900.07ed6d5fa32c1d54af0f.ttf",
@@ -70,11 +70,11 @@
     "static/media/slick.woff": "/merto_website/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/merto_website/index.html",
     "main.47cd847d.css.map": "/merto_website/static/css/main.47cd847d.css.map",
-    "main.3917e2ca.js.map": "/merto_website/static/js/main.3917e2ca.js.map",
+    "main.17693c43.js.map": "/merto_website/static/js/main.17693c43.js.map",
     "453.53cb52b5.chunk.js.map": "/merto_website/static/js/453.53cb52b5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.47cd847d.css",
-    "static/js/main.3917e2ca.js"
+    "static/js/main.17693c43.js"
   ]
 }
