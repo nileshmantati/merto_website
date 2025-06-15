@@ -1,0 +1,67 @@
+.content_box h1 {
+    font-family: "Poppins";
+    font-weight: 600;
+}
+
+.content_box p {
+    font-family: "Poppins";
+    font-size: .9rem;
+}
+
+.mission_box h1 {
+    font-family: "Poppins";
+    font-weight: 600;
+}
+
+.mission_box p {
+    font-family: "Poppins";
+    font-size: .9rem;
+}
+
+.mission_box i {
+    color: gray;
+    font-size: 5rem;
+}
+
+.content_box h6 {
+    font-family: "Poppins";
+    font-size: 1rem;
+}
+
+.content_box span {
+    font-family: "Poppins";
+    font-size: .9rem;
+    color: gray;
+}
+
+.outline-text {
+    font-size: clamp(4rem, 20vw, 10rem);
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+}
+
+.Stores_in_world img {
+    transition: all ease-in-out .3s;
+}
+
+.Stores_in_world img:hover {
+    opacity: 0.7;
+}
+
+.Store_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Store_text h5 {
+    font-family: "Poppins";
+    font-weight: 600;
+}
+
+.Store_text p {
+    font-family: "Poppins";
+    font-size: .9rem;
+    color: gray;
+}

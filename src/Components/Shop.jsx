@@ -468,7 +468,7 @@ function Shop() {
     ];
     return (
         <div>
-            <div className="main_heading px-4 px-lg-0 pt-3">
+            <div className="main_heading px-1 px-lg-0 pt-3">
                 <Container fluid="lg">
                     <div className="heading_text">
                         <div className="heading_link py-2 d-flex justify-content-center">
@@ -480,7 +480,7 @@ function Shop() {
                     </div>
                 </Container>
             </div>
-            <div className="categories_list px-4 px-lg-0 pt-0 pt-sm-2">
+            <div className="categories_list px-1 px-lg-0 pt-0 pt-sm-2">
                 <Container fluid="lg">
                     <Slider {...settings} className='categories_slider pb-4 mt-4 border-1 border-bottom'>
                         {categoriesslider.map((item, index) => (
@@ -499,7 +499,7 @@ function Shop() {
                     </Slider>
                 </Container>
             </div>
-            <div className="main pb-5 px-4 px-lg-0">
+            <div className="main pb-5 px-1 px-lg-0">
                 <Container fluid="lg" className="my-4" >
                     <Row>
                         {/* Filters */}
